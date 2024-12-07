@@ -43,7 +43,7 @@ class AlchemyBadgeGenerator:
         with open("layer.json", encoding="utf-8") as f:
             self.layer_json = json.load(f)
 
-    def get_paths(self, npc: str, main: str, sub: str) -> list[str]:
+    def get_paths(self, npc: str, main_item: str, sub_item: str) -> list[str]:
         """
         Get the layer image paths that represent a combo
 
@@ -53,8 +53,8 @@ class AlchemyBadgeGenerator:
         """
 
         npc_path = f"layers/{npc.lower()}.png"
-        main_path = f"layers/{self.layer_json[main]}_main.png"
-        sub_path = f"layers/{self.layer_json[sub]}_sub.png"
+        main_path = f"layers/{self.layer_json[main_item]}_main.png"
+        sub_path = f"layers/{self.layer_json[sub_item]}_sub.png"
         combo = f"{npc_path}{main_path}{sub_path}"
         if combo not in self.combo_counter:
             self.combo_counter[combo] = 1
@@ -73,11 +73,11 @@ class AlchemyBadgeGenerator:
 
         # Loop through every item combo in the alchemy JSON file
         for npc in self.alchemy_json:
-            for main in self.alchemy_json[npc]:
-                for sub in self.alchemy_json[npc][main]:
+            for main_item in self.alchemy_json[npc]:
+                for sub_item in self.alchemy_json[npc][main_item]:
 
                     # Get layer image paths
-                    paths = self.get_paths(npc, main, sub)
+                    paths = self.get_paths(npc, main_item, sub_item)
 
                     # Overlay all layers onto the base image
                     new_image = self.base_image
@@ -87,10 +87,17 @@ class AlchemyBadgeGenerator:
 
                     # Save unique item combo image
                     new_image.save(
-                        f"out/{combo_index} - {npc} - {main} + {sub}.png", "PNG"
+                        f"out/{combo_index} - {npc} - {main_item} + {sub_item}.png",
+                        "PNG",
                     )
                     combo_index += 1
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Main function"""
+
     AlchemyBadgeGenerator().run()
+
+
+if __name__ == "__main__":
+    main()
