@@ -12,6 +12,15 @@ GAME_ID = 22364
 GAME_TITLE = "The Nightmare of Druaga: Fushigi no Dungeon"
 RAINT_VER = "1.3.1.0"
 
+def pad_floor_number(floor: str) -> str:
+    """
+    Function to pad a floor number for proper sorting
+    """
+
+    if "B" in floor:
+        return f"B{floor.split("B")[1].zfill(3)}"
+    return f"{floor.zfill(4)}"
+
 
 def create_alchemy_jsons() -> None:
     """
@@ -82,9 +91,8 @@ def create_dungeon_jsons() -> None:
             # Parse required info
             note_body = note.split("]")[1].split(" - ")
             dungeon = note_body[0].strip()
-            floor = note_body[1].strip()
+            floor = pad_floor_number(note_body[1].strip())
             chest = note_body[2].strip()
-
             addresses.setdefault(dungeon, {}).setdefault(floor, {})
             addresses[dungeon][floor][chest] = entry["Address"]
 
@@ -98,7 +106,7 @@ def create_dungeon_jsons() -> None:
             # Parse required info
             note_body = note.split("]")[1].split(" - ")
             dungeon = note_body[0].strip()
-            floor = note_body[1].strip()
+            floor = pad_floor_number(note_body[1].strip())
             bonus = note_body[2].strip()
 
             addresses.setdefault(dungeon, {}).setdefault(floor, {})
