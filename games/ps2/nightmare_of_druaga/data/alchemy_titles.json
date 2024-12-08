@@ -1,0 +1,203 @@
+{
+    "Aziel": {
+        "Peppermint Petal": {
+            "Healing Potion": "Aziel's Healing Peppermint Petal",
+            "Fine Healing Potion": "Aziel's Fine Healing Peppermint Petal",
+            "Quality Healing Potion": "Aziel's Quality Healing Peppermint Petal",
+            "Super Healing Potion": "Aziel's Super Healing Peppermint Petal",
+            "Garlic Leaf": "Aziel's Garlic Peppermint Petal",
+            "Garlic Petal": "Aziel's Garlic Peppermint Petal",
+            "Garlic Root": "Aziel's Garlic Peppermint Petal"
+        },
+        "Peppermint Leaf": {
+            "Ability Potion": "Aziel's Ability Peppermint Leaf",
+            "Fine Ability Potion": "Aziel's Fine Ability Peppermint Leaf",
+            "Quality Ability Potion": "Aziel's Quality Ability Peppermint Leaf",
+            "Super Ability Potion": "Aziel's Super Ability Peppermint Leaf",
+            "Garlic Leaf": "Aziel's Garlic Peppermint Leaf",
+            "Garlic Petal": "Aziel's Garlic Peppermint Leaf",
+            "Garlic Root": "Aziel's Garlic Peppermint Leaf"
+        },
+        "Peppermint Root": {
+            "Antidote Potion": "Aziel's Antidote Peppermint Root",
+            "Anti-Panic Potion": "Aziel's Anti-Panic Peppermint Root",
+            "Sleep Potion": "Aziel's Sleep Peppermint Root",
+            "Poison Potion": "Aziel's Poison Peppermint Root",
+            "Panic Potion": "Aziel's Panic Peppermint Root",
+            "Energy-Drain Potion": "Aziel's Energy-Drain Peppermint Root",
+            "Garlic Leaf": "Aziel's Garlic Peppermint Root",
+            "Garlic Petal": "Aziel's Garlic Peppermint Root",
+            "Garlic Root": "Aziel's Garlic Peppermint Root"
+        },
+        "Garlic Petal": {
+            "Bronze Spike": "Aziel's Bronze Garlic Petal",
+            "Iron Spike": "Aziel's Iron Garlic Petal",
+            "Silver Spike": "Aziel's Silver Garlic Petal",
+            "Platinum Spike": "Aziel's Platinum Garlic Petal",
+            "Mythril Spike": "Aziel's Mythril Garlic Petal",
+            "Crystal Spike": "Aziel's Crystal Garlic Petal"
+        },
+        "Garlic Leaf": {
+            "Bronze Spike": "Aziel's Bronze Garlic Leaf",
+            "Iron Spike": "Aziel's Iron Garlic Leaf",
+            "Silver Spike": "Aziel's Silver Garlic Leaf",
+            "Platinum Spike": "Aziel's Platinum Garlic Leaf",
+            "Mythril Spike": "Aziel's Mythril Garlic Leaf",
+            "Crystal Spike": "Aziel's Crystal Garlic Leaf"
+        },
+        "Garlic Root": {
+            "Bronze Spike": "Aziel's Bronze Garlic Root",
+            "Iron Spike": "Aziel's Iron Garlic Root",
+            "Silver Spike": "Aziel's Silver Garlic Root",
+            "Platinum Spike": "Aziel's Platinum Garlic Root",
+            "Mythril Spike": "Aziel's Mythril Garlic Root",
+            "Crystal Spike": "Aziel's Crystal Garlic Root"
+        },
+        "Mandrake Leaf": {
+            "Refined Water": "Aziel's Refined Mandrake Leaf",
+            "Poison Potion": "Aziel's Poison Mandrake Leaf",
+            "Sleep Potion": "Aziel's Sleep Mandrake Leaf",
+            "Panic Potion": "Aziel's Panic Mandrake Leaf",
+            "Energy-Drain Potion": "Aziel's Energy-Drain Mandrake Leaf"
+        },
+        "Mandrake Petal": {
+            "Refined Water": "Aziel's Refined Mandrake Petal",
+            "Poison Potion": "Aziel's Poison Mandrake Petal",
+            "Sleep Potion": "Aziel's Sleep Mandrake Petal",
+            "Panic Potion": "Aziel's Panic Mandrake Petal",
+            "Energy-Drain Potion": "Aziel's Energy-Drain Mandrake Petal"
+        },
+        "Mandrake Root": {
+            "Refined Water": "Aziel's Refined Mandrake Root",
+            "Poison Potion": "Aziel's Poison Mandrake Root",
+            "Sleep Potion": "Aziel's Sleep Mandrake Root",
+            "Panic Potion": "Aziel's Panic Mandrake Root",
+            "Energy-Drain Potion": "Aziel's Energy-Drain Mandrake Root"
+        },
+        "Belladonna Leaf": {
+            "Healing Potion": "Aziel's Healing Belladonna Leaf",
+            "Fine Healing Potion": "Aziel's Fine Healing Belladonna Leaf",
+            "Quality Healing Potion": "Aziel's Quality Healing Belladonna Leaf",
+            "Super Healing Potion": "Aziel's Super Healing Belladonna Leaf"
+        },
+        "Belladonna Petal": {
+            "Ability Potion": "Aziel's Ability Belladonna Petal",
+            "Fine Ability Potion": "Aziel's Fine Ability Belladonna Petal",
+            "Quality Ability Potion": "Aziel's Quality Ability Belladonna Petal",
+            "Super Ability Potion": "Aziel's Super Ability Belladonna Petal"
+        },
+        "Belladonna Root": {
+            "Antidote Potion": "Aziel's Antidote Belladonna Root",
+            "Anti-Panic Potion": "Aziel's Anti-Panic Belladonna Root",
+            "Sleep Potion": "Aziel's Sleep Belladonna Root",
+            "Poison Potion": "Aziel's Poison Belladonna Root",
+            "Panic Potion": "Aziel's Panic Belladonna Root",
+            "Energy-Drain Potion": "Aziel's Energy-Drain Belladonna Root"
+        }
+    },
+    "Saija": {
+        "Peppermint Petal": {
+            "Healing Potion": "Saija's Healing Peppermint Petal",
+            "Fine Healing Potion": "Saija's Fine Healing Peppermint Petal",
+            "Quality Healing Potion": "Saija's Quality Healing Peppermint Petal",
+            "Super Healing Potion": "Saija's Super Healing Peppermint Petal",
+            "Garlic Leaf": "Saija's Garlic Peppermint Petal",
+            "Garlic Petal": "Saija's Garlic Peppermint Petal",
+            "Garlic Root": "Saija's Garlic Peppermint Petal"
+        },
+        "Peppermint Leaf": {
+            "Ability Potion": "Saija's Ability Peppermint Leaf",
+            "Fine Ability Potion": "Saija's Fine Ability Peppermint Leaf",
+            "Quality Ability Potion": "Saija's Quality Ability Peppermint Leaf",
+            "Super Ability Potion": "Saija's Super Ability Peppermint Leaf",
+            "Garlic Leaf": "Saija's Garlic Peppermint Leaf",
+            "Garlic Petal": "Saija's Garlic Peppermint Leaf",
+            "Garlic Root": "Saija's Garlic Peppermint Leaf"
+        },
+        "Peppermint Root": {
+            "Antidote Potion": "Saija's Antidote Peppermint Root",
+            "Anti-Panic Potion": "Saija's Anti-Panic Peppermint Root",
+            "Sleep Potion": "Saija's Sleep Peppermint Root",
+            "Poison Potion": "Saija's Poison Peppermint Root",
+            "Panic Potion": "Saija's Panic Peppermint Root",
+            "Energy-Drain Potion": "Saija's Energy-Drain Peppermint Root",
+            "Garlic Leaf": "Saija's Garlic Peppermint Root",
+            "Garlic Petal": "Saija's Garlic Peppermint Root",
+            "Garlic Root": "Saija's Garlic Peppermint Root"
+        },
+        "Garlic Petal": {
+            "Bronze Spike": "Saija's Bronze Garlic Petal",
+            "Iron Spike": "Saija's Iron Garlic Petal",
+            "Silver Spike": "Saija's Silver Garlic Petal",
+            "Platinum Spike": "Saija's Platinum Garlic Petal",
+            "Mythril Spike": "Saija's Mythril Garlic Petal",
+            "Crystal Spike": "Saija's Crystal Garlic Petal"
+        },
+        "Garlic Leaf": {
+            "Bronze Spike": "Saija's Bronze Garlic Leaf",
+            "Iron Spike": "Saija's Iron Garlic Leaf",
+            "Silver Spike": "Saija's Silver Garlic Leaf",
+            "Platinum Spike": "Saija's Platinum Garlic Leaf",
+            "Mythril Spike": "Saija's Mythril Garlic Leaf",
+            "Crystal Spike": "Saija's Crystal Garlic Leaf"
+        },
+        "Garlic Root": {
+            "Bronze Spike": "Saija's Bronze Garlic Root",
+            "Iron Spike": "Saija's Iron Garlic Root",
+            "Silver Spike": "Saija's Silver Garlic Root",
+            "Platinum Spike": "Saija's Platinum Garlic Root",
+            "Mythril Spike": "Saija's Mythril Garlic Root",
+            "Crystal Spike": "Saija's Crystal Garlic Root"
+        },
+        "Mandrake Leaf": {
+            "Refined Water": "Saija's Refined Mandrake Leaf",
+            "Poison Potion": "Saija's Poison Mandrake Leaf",
+            "Sleep Potion": "Saija's Sleep Mandrake Leaf",
+            "Panic Potion": "Saija's Panic Mandrake Leaf",
+            "Energy-Drain Potion": "Saija's Energy-Drain Mandrake Leaf",
+            "Dragon Drops": "Saija's Dragon Mandrake Leaf",
+            "Soul Liquid": "Saija's Soul Mandrake Leaf",
+            "Ishtar's Liqueur": "Saija's Ishtar's Mandrake Leaf"
+        },
+        "Mandrake Petal": {
+            "Refined Water": "Saija's Refined Mandrake Petal",
+            "Poison Potion": "Saija's Poison Mandrake Petal",
+            "Sleep Potion": "Saija's Sleep Mandrake Petal",
+            "Panic Potion": "Saija's Panic Mandrake Petal",
+            "Energy-Drain Potion": "Saija's Energy-Drain Mandrake Petal",
+            "Dragon Drops": "Saija's Dragon Mandrake Petal",
+            "Soul Liquid": "Saija's Soul Mandrake Petal",
+            "Ishtar's Liqueur": "Saija's Ishtar's Mandrake Petal"
+        },
+        "Mandrake Root": {
+            "Refined Water": "Saija's Refined Mandrake Root",
+            "Poison Potion": "Saija's Poison Mandrake Root",
+            "Sleep Potion": "Saija's Sleep Mandrake Root",
+            "Panic Potion": "Saija's Panic Mandrake Root",
+            "Energy-Drain Potion": "Saija's Energy-Drain Mandrake Root",
+            "Dragon Drops": "Saija's Dragon Mandrake Root",
+            "Soul Liquid": "Saija's Soul Mandrake Root",
+            "Ishtar's Liqueur": "Saija's Ishtar's Mandrake Root"
+        },
+        "Belladonna Leaf": {
+            "Healing Potion": "Saija's Healing Belladonna Leaf",
+            "Fine Healing Potion": "Saija's Fine Healing Belladonna Leaf",
+            "Quality Healing Potion": "Saija's Quality Healing Belladonna Leaf",
+            "Super Healing Potion": "Saija's Super Healing Belladonna Leaf"
+        },
+        "Belladonna Petal": {
+            "Ability Potion": "Saija's Ability Belladonna Petal",
+            "Fine Ability Potion": "Saija's Fine Ability Belladonna Petal",
+            "Quality Ability Potion": "Saija's Quality Ability Belladonna Petal",
+            "Super Ability Potion": "Saija's Super Ability Belladonna Petal"
+        },
+        "Belladonna Root": {
+            "Antidote Potion": "Saija's Antidote Belladonna Root",
+            "Anti-Panic Potion": "Saija's Anti-Panic Belladonna Root",
+            "Sleep Potion": "Saija's Sleep Belladonna Root",
+            "Poison Potion": "Saija's Poison Belladonna Root",
+            "Panic Potion": "Saija's Panic Belladonna Root",
+            "Energy-Drain Potion": "Saija's Energy-Drain Belladonna Root"
+        }
+    }
+}

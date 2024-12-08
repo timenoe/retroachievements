@@ -1,0 +1,203 @@
+{
+    "Aziel": {
+        "Peppermint Petal": [
+            "Healing Potion",
+            "Fine Healing Potion",
+            "Quality Healing Potion",
+            "Super Healing Potion",
+            "Garlic Leaf",
+            "Garlic Petal",
+            "Garlic Root"
+        ],
+        "Peppermint Leaf": [
+            "Ability Potion",
+            "Fine Ability Potion",
+            "Quality Ability Potion",
+            "Super Ability Potion",
+            "Garlic Leaf",
+            "Garlic Petal",
+            "Garlic Root"
+        ],
+        "Peppermint Root": [
+            "Antidote Potion",
+            "Anti-Panic Potion",
+            "Sleep Potion",
+            "Poison Potion",
+            "Panic Potion",
+            "Energy-Drain Potion",
+            "Garlic Leaf",
+            "Garlic Petal",
+            "Garlic Root"
+        ],
+        "Garlic Petal": [
+            "Bronze Spike",
+            "Iron Spike",
+            "Silver Spike",
+            "Platinum Spike",
+            "Mythril Spike",
+            "Crystal Spike"
+        ],
+        "Garlic Leaf": [
+            "Bronze Spike",
+            "Iron Spike",
+            "Silver Spike",
+            "Platinum Spike",
+            "Mythril Spike",
+            "Crystal Spike"
+        ],
+        "Garlic Root": [
+            "Bronze Spike",
+            "Iron Spike",
+            "Silver Spike",
+            "Platinum Spike",
+            "Mythril Spike",
+            "Crystal Spike"
+        ],
+        "Mandrake Leaf": [
+            "Refined Water",
+            "Poison Potion",
+            "Sleep Potion",
+            "Panic Potion",
+            "Energy-Drain Potion"
+        ],
+        "Mandrake Petal": [
+            "Refined Water",
+            "Poison Potion",
+            "Sleep Potion",
+            "Panic Potion",
+            "Energy-Drain Potion"
+        ],
+        "Mandrake Root": [
+            "Refined Water",
+            "Poison Potion",
+            "Sleep Potion",
+            "Panic Potion",
+            "Energy-Drain Potion"
+        ],
+        "Belladonna Leaf": [
+            "Healing Potion",
+            "Fine Healing Potion",
+            "Quality Healing Potion",
+            "Super Healing Potion"
+        ],
+        "Belladonna Petal": [
+            "Ability Potion",
+            "Fine Ability Potion",
+            "Quality Ability Potion",
+            "Super Ability Potion"
+        ],
+        "Belladonna Root": [
+            "Antidote Potion",
+            "Anti-Panic Potion",
+            "Sleep Potion",
+            "Poison Potion",
+            "Panic Potion",
+            "Energy-Drain Potion"
+        ]
+    },
+    "Saija": {
+        "Peppermint Petal": [
+            "Healing Potion",
+            "Fine Healing Potion",
+            "Quality Healing Potion",
+            "Super Healing Potion",
+            "Garlic Leaf",
+            "Garlic Petal",
+            "Garlic Root"
+        ],
+        "Peppermint Leaf": [
+            "Ability Potion",
+            "Fine Ability Potion",
+            "Quality Ability Potion",
+            "Super Ability Potion",
+            "Garlic Leaf",
+            "Garlic Petal",
+            "Garlic Root"
+        ],
+        "Peppermint Root": [
+            "Antidote Potion",
+            "Anti-Panic Potion",
+            "Sleep Potion",
+            "Poison Potion",
+            "Panic Potion",
+            "Energy-Drain Potion",
+            "Garlic Leaf",
+            "Garlic Petal",
+            "Garlic Root"
+        ],
+        "Garlic Petal": [
+            "Bronze Spike",
+            "Iron Spike",
+            "Silver Spike",
+            "Platinum Spike",
+            "Mythril Spike",
+            "Crystal Spike"
+        ],
+        "Garlic Leaf": [
+            "Bronze Spike",
+            "Iron Spike",
+            "Silver Spike",
+            "Platinum Spike",
+            "Mythril Spike",
+            "Crystal Spike"
+        ],
+        "Garlic Root": [
+            "Bronze Spike",
+            "Iron Spike",
+            "Silver Spike",
+            "Platinum Spike",
+            "Mythril Spike",
+            "Crystal Spike"
+        ],
+        "Mandrake Leaf": [
+            "Refined Water",
+            "Poison Potion",
+            "Sleep Potion",
+            "Panic Potion",
+            "Energy-Drain Potion",
+            "Dragon Drops",
+            "Soul Liquid",
+            "Ishtar's Liqueur"
+        ],
+        "Mandrake Petal": [
+            "Refined Water",
+            "Poison Potion",
+            "Sleep Potion",
+            "Panic Potion",
+            "Energy-Drain Potion",
+            "Dragon Drops",
+            "Soul Liquid",
+            "Ishtar's Liqueur"
+        ],
+        "Mandrake Root": [
+            "Refined Water",
+            "Poison Potion",
+            "Sleep Potion",
+            "Panic Potion",
+            "Energy-Drain Potion",
+            "Dragon Drops",
+            "Soul Liquid",
+            "Ishtar's Liqueur"
+        ],
+        "Belladonna Leaf": [
+            "Healing Potion",
+            "Fine Healing Potion",
+            "Quality Healing Potion",
+            "Super Healing Potion"
+        ],
+        "Belladonna Petal": [
+            "Ability Potion",
+            "Fine Ability Potion",
+            "Quality Ability Potion",
+            "Super Ability Potion"
+        ],
+        "Belladonna Root": [
+            "Antidote Potion",
+            "Anti-Panic Potion",
+            "Sleep Potion",
+            "Poison Potion",
+            "Panic Potion",
+            "Energy-Drain Potion"
+        ]
+    }
+}

@@ -1,0 +1,615 @@
+{
+    "D. Ruins": {
+        "B1F": {
+            "Gold Chest Collected": "0x91b05c",
+            "Silver Chest Collected": "0x91b05e",
+            "Bonus Dungeon Progress": "0x91dba2"
+        },
+        "B2F": {
+            "Gold Chest Collected": "0x91b060",
+            "Silver Chest Collected": "0x91b062",
+            "Bonus Dungeon Progress": "0x91dbb6"
+        },
+        "B3F": {
+            "Gold Chest Collected": "0x91b064",
+            "Silver Chest Collected": "0x91b066",
+            "Bonus Dungeon Progress": "0x91dbca"
+        },
+        "B4F": {
+            "Gold Chest Collected": "0x91b068",
+            "Silver Chest Collected": "0x91b06a",
+            "Bonus Dungeon Progress": "0x91dbde"
+        },
+        "B5F": {
+            "Gold Chest Collected": "0x91b06c",
+            "Silver Chest Collected": "0x91b06e",
+            "Bonus Dungeon Progress": "0x91dbf2"
+        },
+        "B6F": {
+            "Gold Chest Collected": "0x91b070",
+            "Silver Chest Collected": "0x91b072",
+            "Bonus Dungeon Progress": "0x91dc06"
+        },
+        "B7F": {
+            "Gold Chest Collected": "0x91b074",
+            "Silver Chest Collected": "0x91b076",
+            "Bonus Dungeon Progress": "0x91dc1a"
+        },
+        "B8F": {
+            "Gold Chest Collected": "0x91b078",
+            "Silver Chest Collected": "0x91b07a",
+            "Bonus Dungeon Progress": "0x91dc2e"
+        },
+        "B9F": {
+            "Gold Chest Collected": "0x91b07c",
+            "Silver Chest Collected": "0x91b07e",
+            "Bonus Dungeon Progress": "0x91dc42"
+        },
+        "B10F": {
+            "Gold Chest Collected (Unused)": "0x91b080",
+            "Silver Chest Collected (Unused)": "0x91b082",
+            "Bonus Dungeon Progress (Unused)": "0x91dc56"
+        }
+    },
+    "Un. Cave": {
+        "B1F": {
+            "Gold Chest Collected": "0x91b084",
+            "Silver Chest Collected": "0x91b086",
+            "Bonus Dungeon Progress": "0x91dc6a"
+        },
+        "B2F": {
+            "Gold Chest Collected": "0x91b088",
+            "Silver Chest Collected": "0x91b08a",
+            "Bonus Dungeon Progress": "0x91dc7e"
+        },
+        "B3F": {
+            "Gold Chest Collected": "0x91b08c",
+            "Silver Chest Collected": "0x91b08e",
+            "Bonus Dungeon Progress": "0x91dc92"
+        },
+        "B4F": {
+            "Gold Chest Collected": "0x91b090",
+            "Silver Chest Collected": "0x91b092",
+            "Bonus Dungeon Progress": "0x91dca6"
+        },
+        "B5F": {
+            "Gold Chest Collected": "0x91b094",
+            "Silver Chest Collected": "0x91b096",
+            "Bonus Dungeon Progress": "0x91dcba"
+        },
+        "B6F": {
+            "Gold Chest Collected": "0x91b098",
+            "Silver Chest Collected": "0x91b09a",
+            "Bonus Dungeon Progress": "0x91dcce"
+        },
+        "B7F": {
+            "Gold Chest Collected": "0x91b09c",
+            "Silver Chest Collected": "0x91b09e",
+            "Bonus Dungeon Progress": "0x91dce2"
+        },
+        "B8F": {
+            "Gold Chest Collected": "0x91b0a0",
+            "Silver Chest Collected": "0x91b0a2",
+            "Bonus Dungeon Progress": "0x91dcf6"
+        },
+        "B9F": {
+            "Gold Chest Collected": "0x91b0a4",
+            "Silver Chest Collected": "0x91b0a6",
+            "Bonus Dungeon Progress": "0x91dd0a"
+        },
+        "B10F": {
+            "Gold Chest Collected (Unused)": "0x91b0a8",
+            "Silver Chest Collected (Unused)": "0x91b0aa",
+            "Bonus Dungeon Progress (Unused)": "0x91dd1e"
+        },
+        "B11F": {
+            "Gold Chest Collected": "0x91b0ac",
+            "Silver Chest Collected": "0x91b0ae",
+            "Bonus Dungeon Progress": "0x91dd32"
+        },
+        "B12F": {
+            "Gold Chest Collected": "0x91b0b0",
+            "Silver Chest Collected": "0x91b0b2",
+            "Bonus Dungeon Progress": "0x91dd46"
+        },
+        "B13F": {
+            "Gold Chest Collected": "0x91b0b4",
+            "Silver Chest Collected": "0x91b0b6",
+            "Bonus Dungeon Progress": "0x91dd5a"
+        },
+        "B14F": {
+            "Gold Chest Collected": "0x91b0b8",
+            "Silver Chest Collected": "0x91b0ba",
+            "Bonus Dungeon Progress": "0x91dd6e"
+        },
+        "B15F": {
+            "Gold Chest Collected": "0x91b0bc",
+            "Silver Chest Collected": "0x91b0be",
+            "Bonus Dungeon Progress": "0x91dd82"
+        },
+        "B16F": {
+            "Gold Chest Collected": "0x91b0c0",
+            "Silver Chest Collected": "0x91b0c2",
+            "Bonus Dungeon Progress": "0x91dd96"
+        },
+        "B17F": {
+            "Gold Chest Collected": "0x91b0c4",
+            "Silver Chest Collected": "0x91b0c6",
+            "Bonus Dungeon Progress": "0x91ddaa"
+        },
+        "B18F": {
+            "Gold Chest Collected": "0x91b0c8",
+            "Silver Chest Collected": "0x91b0ca",
+            "Bonus Dungeon Progress": "0x91ddbe"
+        },
+        "B19F": {
+            "Gold Chest Collected": "0x91b0cc",
+            "Silver Chest Collected": "0x91b0ce",
+            "Bonus Dungeon Progress": "0x91ddd2"
+        },
+        "B20F": {
+            "Gold Chest Collected (Unused)": "0x91b0d0",
+            "Silver Chest Collected (Unused)": "0x91b0d2",
+            "Bonus Dungeon Progress (Unused)": "0x91dde6"
+        }
+    },
+    "Holy Place": {
+        "B1F": {
+            "Gold Chest Collected": "0x91b0d4",
+            "Silver Chest Collected": "0x91b0d6",
+            "Bonus Dungeon Progress": "0x91ddfa"
+        },
+        "B2F": {
+            "Gold Chest Collected": "0x91b0d8",
+            "Silver Chest Collected": "0x91b0da",
+            "Bonus Dungeon Progress": "0x91de0e"
+        },
+        "B3F": {
+            "Gold Chest Collected": "0x91b0dc",
+            "Silver Chest Collected": "0x91b0de",
+            "Bonus Dungeon Progress": "0x91de22"
+        },
+        "B4F": {
+            "Gold Chest Collected": "0x91b0e0",
+            "Silver Chest Collected": "0x91b0e2",
+            "Bonus Dungeon Progress": "0x91de36"
+        },
+        "B5F": {
+            "Gold Chest Collected": "0x91b0e4",
+            "Silver Chest Collected": "0x91b0e6",
+            "Bonus Dungeon Progress": "0x91de4a"
+        },
+        "B6F": {
+            "Gold Chest Collected": "0x91b0e8",
+            "Silver Chest Collected": "0x91b0ea",
+            "Bonus Dungeon Progress": "0x91de5e"
+        },
+        "B7F": {
+            "Gold Chest Collected": "0x91b0ec",
+            "Silver Chest Collected": "0x91b0ee",
+            "Bonus Dungeon Progress": "0x91de72"
+        },
+        "B8F": {
+            "Gold Chest Collected": "0x91b0f0",
+            "Silver Chest Collected": "0x91b0f2",
+            "Bonus Dungeon Progress": "0x91de86"
+        },
+        "B9F": {
+            "Gold Chest Collected": "0x91b0f4",
+            "Silver Chest Collected": "0x91b0f6",
+            "Bonus Dungeon Progress": "0x91de9a"
+        },
+        "B10F": {
+            "Gold Chest Collected": "0x91b0f8",
+            "Silver Chest Collected": "0x91b0fa",
+            "Bonus Dungeon Progress": "0x91deae"
+        },
+        "B11F": {
+            "Gold Chest Collected": "0x91b0fc",
+            "Silver Chest Collected": "0x91b0fe",
+            "Bonus Dungeon Progress": "0x91dec2"
+        },
+        "B12F": {
+            "Gold Chest Collected": "0x91b100",
+            "Silver Chest Collected": "0x91b102",
+            "Bonus Dungeon Progress": "0x91ded6"
+        },
+        "B13F": {
+            "Gold Chest Collected": "0x91b104",
+            "Silver Chest Collected": "0x91b106",
+            "Bonus Dungeon Progress": "0x91deea"
+        },
+        "B14F": {
+            "Gold Chest Collected": "0x91b108",
+            "Silver Chest Collected": "0x91b10a",
+            "Bonus Dungeon Progress": "0x91defe"
+        },
+        "B15F": {
+            "Gold Chest Collected (Unused)": "0x91b10c",
+            "Silver Chest Collected (Unused)": "0x91b10e",
+            "Bonus Dungeon Progress (Unused)": "0x91df12"
+        },
+        "B16F": {
+            "Gold Chest Collected": "0x91b110",
+            "Silver Chest Collected": "0x91b112",
+            "Bonus Dungeon Progress": "0x91df26"
+        },
+        "B17F": {
+            "Gold Chest Collected": "0x91b114",
+            "Silver Chest Collected": "0x91b116",
+            "Bonus Dungeon Progress": "0x91df3a"
+        },
+        "B18F": {
+            "Gold Chest Collected": "0x91b118",
+            "Silver Chest Collected": "0x91b11a",
+            "Bonus Dungeon Progress": "0x91df4e"
+        },
+        "B19F": {
+            "Gold Chest Collected": "0x91b11c",
+            "Silver Chest Collected": "0x91b11e",
+            "Bonus Dungeon Progress": "0x91df62"
+        },
+        "B20F": {
+            "Gold Chest Collected": "0x91b120",
+            "Silver Chest Collected": "0x91b122",
+            "Bonus Dungeon Progress": "0x91df76"
+        },
+        "B21F": {
+            "Gold Chest Collected": "0x91b124",
+            "Silver Chest Collected": "0x91b126",
+            "Bonus Dungeon Progress": "0x91df8a"
+        },
+        "B22F": {
+            "Gold Chest Collected": "0x91b128",
+            "Silver Chest Collected": "0x91b12a",
+            "Bonus Dungeon Progress": "0x91df9e"
+        },
+        "B23F": {
+            "Gold Chest Collected": "0x91b12c",
+            "Silver Chest Collected": "0x91b12e",
+            "Bonus Dungeon Progress": "0x91dfb2"
+        },
+        "B24F": {
+            "Gold Chest Collected": "0x91b130",
+            "Silver Chest Collected": "0x91b132",
+            "Bonus Dungeon Progress": "0x91dfc6"
+        },
+        "B25F": {
+            "Gold Chest Collected": "0x91b134",
+            "Silver Chest Collected": "0x91b136",
+            "Bonus Dungeon Progress": "0x91dfda"
+        },
+        "B26F": {
+            "Gold Chest Collected": "0x91b138",
+            "Silver Chest Collected": "0x91b13a",
+            "Bonus Dungeon Progress": "0x91dfee"
+        },
+        "B27F": {
+            "Gold Chest Collected": "0x91b13c",
+            "Silver Chest Collected": "0x91b13e",
+            "Bonus Dungeon Progress": "0x91e002"
+        },
+        "B28F": {
+            "Gold Chest Collected": "0x91b140",
+            "Silver Chest Collected": "0x91b142",
+            "Bonus Dungeon Progress": "0x91e016"
+        },
+        "B29F": {
+            "Gold Chest Collected": "0x91b144",
+            "Silver Chest Collected": "0x91b146",
+            "Bonus Dungeon Progress": "0x91e02a"
+        },
+        "B30F": {
+            "Gold Chest Collected (Unused)": "0x91b148",
+            "Silver Chest Collected (Unused)": "0x91b14a",
+            "Bonus Dungeon Progress (Unused)": "0x91e03e"
+        },
+        "B31F": {
+            "Gold Chest Collected (Unused)": "0x91b14c",
+            "Silver Chest Collected (Unused)": "0x91b14e",
+            "Bonus Dungeon Progress (Unused)": "0x91e052"
+        }
+    },
+    "Twr. of Druaga": {
+        "1F": {
+            "Gold Chest Collected": "0x91b150",
+            "Silver Chest Collected": "0x91b152",
+            "Bonus Dungeon Progress": "0x91e066"
+        },
+        "2F": {
+            "Gold Chest Collected": "0x91b154",
+            "Silver Chest Collected": "0x91b156",
+            "Bonus Dungeon Progress": "0x91e07a"
+        },
+        "3F": {
+            "Gold Chest Collected": "0x91b158",
+            "Silver Chest Collected": "0x91b15a",
+            "Bonus Dungeon Progress": "0x91e08e"
+        },
+        "4F": {
+            "Gold Chest Collected": "0x91b15c",
+            "Silver Chest Collected": "0x91b15e",
+            "Bonus Dungeon Progress": "0x91e0a2"
+        },
+        "5F": {
+            "Gold Chest Collected": "0x91b160",
+            "Silver Chest Collected": "0x91b162",
+            "Bonus Dungeon Progress": "0x91e0b6"
+        },
+        "6F": {
+            "Gold Chest Collected": "0x91b164",
+            "Silver Chest Collected": "0x91b166",
+            "Bonus Dungeon Progress": "0x91e0ca"
+        },
+        "7F": {
+            "Gold Chest Collected": "0x91b168",
+            "Silver Chest Collected": "0x91b16a",
+            "Bonus Dungeon Progress": "0x91e0de"
+        },
+        "8F": {
+            "Gold Chest Collected": "0x91b16c",
+            "Silver Chest Collected": "0x91b16e",
+            "Bonus Dungeon Progress": "0x91e0f2"
+        },
+        "9F": {
+            "Gold Chest Collected": "0x91b170",
+            "Silver Chest Collected": "0x91b172",
+            "Bonus Dungeon Progress": "0x91e106"
+        },
+        "10F": {
+            "Gold Chest Collected": "0x91b174",
+            "Silver Chest Collected": "0x91b176",
+            "Bonus Dungeon Progress": "0x91e11a"
+        },
+        "11F": {
+            "Gold Chest Collected": "0x91b178",
+            "Silver Chest Collected": "0x91b17a",
+            "Bonus Dungeon Progress": "0x91e12e"
+        },
+        "12F": {
+            "Gold Chest Collected": "0x91b17c",
+            "Silver Chest Collected": "0x91b17e",
+            "Bonus Dungeon Progress": "0x91e142"
+        },
+        "13F": {
+            "Gold Chest Collected": "0x91b180",
+            "Silver Chest Collected": "0x91b182",
+            "Bonus Dungeon Progress": "0x91e156"
+        },
+        "14F": {
+            "Gold Chest Collected": "0x91b184",
+            "Silver Chest Collected": "0x91b186",
+            "Bonus Dungeon Progress": "0x91e16a"
+        },
+        "15F": {
+            "Gold Chest Collected": "0x91b188",
+            "Silver Chest Collected": "0x91b18a",
+            "Bonus Dungeon Progress": "0x91e17e"
+        },
+        "16F": {
+            "Gold Chest Collected": "0x91b18c",
+            "Silver Chest Collected": "0x91b18e",
+            "Bonus Dungeon Progress": "0x91e192"
+        },
+        "17F": {
+            "Gold Chest Collected": "0x91b190",
+            "Silver Chest Collected": "0x91b192",
+            "Bonus Dungeon Progress": "0x91e1a6"
+        },
+        "18F": {
+            "Gold Chest Collected": "0x91b194",
+            "Silver Chest Collected": "0x91b196",
+            "Bonus Dungeon Progress": "0x91e1ba"
+        },
+        "19F": {
+            "Gold Chest Collected": "0x91b198",
+            "Silver Chest Collected": "0x91b19a",
+            "Bonus Dungeon Progress": "0x91e1ce"
+        },
+        "20F": {
+            "Gold Chest Collected (Unused)": "0x91b19c",
+            "Silver Chest Collected (Unused)": "0x91b19e",
+            "Bonus Dungeon Progress (Unused)": "0x91e1e2"
+        },
+        "21F": {
+            "Gold Chest Collected": "0x91b1a0",
+            "Silver Chest Collected": "0x91b1a2",
+            "Bonus Dungeon Progress": "0x91e1f6"
+        },
+        "22F": {
+            "Gold Chest Collected": "0x91b1a4",
+            "Silver Chest Collected": "0x91b1a6",
+            "Bonus Dungeon Progress": "0x91e20a"
+        },
+        "23F": {
+            "Gold Chest Collected": "0x91b1a8",
+            "Silver Chest Collected": "0x91b1aa",
+            "Bonus Dungeon Progress": "0x91e21e"
+        },
+        "24F": {
+            "Gold Chest Collected": "0x91b1ac",
+            "Silver Chest Collected": "0x91b1ae",
+            "Bonus Dungeon Progress": "0x91e232"
+        },
+        "25F": {
+            "Gold Chest Collected": "0x91b1b0",
+            "Silver Chest Collected": "0x91b1b2",
+            "Bonus Dungeon Progress": "0x91e246"
+        },
+        "26F": {
+            "Gold Chest Collected": "0x91b1b4",
+            "Silver Chest Collected": "0x91b1b6",
+            "Bonus Dungeon Progress": "0x91e25a"
+        },
+        "27F": {
+            "Gold Chest Collected": "0x91b1b8",
+            "Silver Chest Collected": "0x91b1ba",
+            "Bonus Dungeon Progress": "0x91e26e"
+        },
+        "28F": {
+            "Gold Chest Collected": "0x91b1bc",
+            "Silver Chest Collected": "0x91b1be",
+            "Bonus Dungeon Progress": "0x91e282"
+        },
+        "29F": {
+            "Gold Chest Collected": "0x91b1c0",
+            "Silver Chest Collected": "0x91b1c2",
+            "Bonus Dungeon Progress": "0x91e296"
+        },
+        "30F": {
+            "Gold Chest Collected": "0x91b1c4",
+            "Silver Chest Collected": "0x91b1c6",
+            "Bonus Dungeon Progress": "0x91e2aa"
+        },
+        "31F": {
+            "Gold Chest Collected": "0x91b1c8",
+            "Silver Chest Collected": "0x91b1ca",
+            "Bonus Dungeon Progress": "0x91e2be"
+        },
+        "32F": {
+            "Gold Chest Collected": "0x91b1cc",
+            "Silver Chest Collected": "0x91b1ce",
+            "Bonus Dungeon Progress": "0x91e2d2"
+        },
+        "33F": {
+            "Gold Chest Collected": "0x91b1d0",
+            "Silver Chest Collected": "0x91b1d2",
+            "Bonus Dungeon Progress": "0x91e2e6"
+        },
+        "34F": {
+            "Gold Chest Collected": "0x91b1d4",
+            "Silver Chest Collected": "0x91b1d6",
+            "Bonus Dungeon Progress": "0x91e2fa"
+        },
+        "35F": {
+            "Gold Chest Collected": "0x91b1d8",
+            "Silver Chest Collected": "0x91b1da",
+            "Bonus Dungeon Progress": "0x91e30e"
+        },
+        "36F": {
+            "Gold Chest Collected": "0x91b1dc",
+            "Silver Chest Collected": "0x91b1de",
+            "Bonus Dungeon Progress": "0x91e322"
+        },
+        "37F": {
+            "Gold Chest Collected": "0x91b1e0",
+            "Silver Chest Collected": "0x91b1e2",
+            "Bonus Dungeon Progress": "0x91e336"
+        },
+        "38F": {
+            "Gold Chest Collected": "0x91b1e4",
+            "Silver Chest Collected": "0x91b1e6",
+            "Bonus Dungeon Progress": "0x91e34a"
+        },
+        "39F": {
+            "Gold Chest Collected": "0x91b1e8",
+            "Silver Chest Collected": "0x91b1ea",
+            "Bonus Dungeon Progress": "0x91e35e"
+        },
+        "40F": {
+            "Gold Chest Collected (Unused)": "0x91b1ec",
+            "Silver Chest Collected (Unused)": "0x91b1ee",
+            "Bonus Dungeon Progress (Unused)": "0x91e372"
+        },
+        "41F": {
+            "Gold Chest Collected": "0x91b1f0",
+            "Silver Chest Collected": "0x91b1f2",
+            "Bonus Dungeon Progress": "0x91e386"
+        },
+        "42F": {
+            "Gold Chest Collected": "0x91b1f4",
+            "Silver Chest Collected": "0x91b1f6",
+            "Bonus Dungeon Progress": "0x91e39a"
+        },
+        "43F": {
+            "Gold Chest Collected": "0x91b1f8",
+            "Silver Chest Collected": "0x91b1fa",
+            "Bonus Dungeon Progress": "0x91e3ae"
+        },
+        "44F": {
+            "Gold Chest Collected": "0x91b1fc",
+            "Silver Chest Collected": "0x91b1fe",
+            "Bonus Dungeon Progress": "0x91e3c2"
+        },
+        "45F": {
+            "Gold Chest Collected": "0x91b200",
+            "Silver Chest Collected": "0x91b202",
+            "Bonus Dungeon Progress": "0x91e3d6"
+        },
+        "46F": {
+            "Gold Chest Collected": "0x91b204",
+            "Silver Chest Collected": "0x91b206",
+            "Bonus Dungeon Progress": "0x91e3ea"
+        },
+        "47F": {
+            "Gold Chest Collected": "0x91b208",
+            "Silver Chest Collected": "0x91b20a",
+            "Bonus Dungeon Progress": "0x91e3fe"
+        },
+        "48F": {
+            "Gold Chest Collected": "0x91b20c",
+            "Silver Chest Collected": "0x91b20e",
+            "Bonus Dungeon Progress": "0x91e412"
+        },
+        "49F": {
+            "Gold Chest Collected": "0x91b210",
+            "Silver Chest Collected": "0x91b212",
+            "Bonus Dungeon Progress": "0x91e426"
+        },
+        "50F": {
+            "Gold Chest Collected": "0x91b214",
+            "Silver Chest Collected": "0x91b216",
+            "Bonus Dungeon Progress": "0x91e43a"
+        },
+        "51F": {
+            "Gold Chest Collected": "0x91b218",
+            "Silver Chest Collected": "0x91b21a",
+            "Bonus Dungeon Progress": "0x91e44e"
+        },
+        "52F": {
+            "Gold Chest Collected": "0x91b21c",
+            "Silver Chest Collected": "0x91b21e",
+            "Bonus Dungeon Progress": "0x91e462"
+        },
+        "53F": {
+            "Gold Chest Collected": "0x91b220",
+            "Silver Chest Collected": "0x91b222",
+            "Bonus Dungeon Progress": "0x91e476"
+        },
+        "54F": {
+            "Gold Chest Collected": "0x91b224",
+            "Silver Chest Collected": "0x91b226",
+            "Bonus Dungeon Progress": "0x91e48a"
+        },
+        "55F": {
+            "Gold Chest Collected": "0x91b228",
+            "Silver Chest Collected": "0x91b22a",
+            "Bonus Dungeon Progress": "0x91e49e"
+        },
+        "56F": {
+            "Gold Chest Collected": "0x91b22c",
+            "Silver Chest Collected": "0x91b22e",
+            "Bonus Dungeon Progress": "0x91e4b2"
+        },
+        "57F": {
+            "Gold Chest Collected (Unused)": "0x91b230",
+            "Silver Chest Collected (Unused)": "0x91b232",
+            "Bonus Dungeon Progress (Unused)": "0x91e4c6"
+        },
+        "58F": {
+            "Gold Chest Collected (Unused)": "0x91b234",
+            "Silver Chest Collected (Unused)": "0x91b236",
+            "Bonus Dungeon Progress (Unused)": "0x91e4da"
+        },
+        "59F": {
+            "Gold Chest Collected (Unused)": "0x91b238",
+            "Silver Chest Collected (Unused)": "0x91b23a",
+            "Bonus Dungeon Progress (Unused)": "0x91e4ee"
+        },
+        "60F": {
+            "Gold Chest Collected (Unused)": "0x91b23c",
+            "Silver Chest Collected (Unused)": "0x91b23e",
+            "Bonus Dungeon Progress (Unused)": "0x91e502"
+        }
+    }
+}
