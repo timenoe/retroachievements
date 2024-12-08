@@ -40,7 +40,7 @@ class AlchemyBadgeGenerator:
         with open("alchemy.json", encoding="utf-8") as f:
             self.alchemy_json = json.load(f)
 
-        with open("layer.json", encoding="utf-8") as f:
+        with open("layers.json", encoding="utf-8") as f:
             self.layer_json = json.load(f)
 
     def get_paths(self, npc: str, main_item: str, sub_item: str) -> list[str]:
