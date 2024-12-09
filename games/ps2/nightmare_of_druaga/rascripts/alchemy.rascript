@@ -1066,12 +1066,18 @@ titles =
 
 // #endregion
 
+// Addresses
+
 dungeon = word(0x815132)
 floor = word(0x815136)
 
+// Functions
+
 function game_is_loaded() => dword(0x6a6a5c) == 1
-function scene_is_loaded() => dword(0x6b5c1c) == 1
 function in_academy() => dungeon == 2 && floor == 9
+function scene_is_loaded() => dword(0x6b5c1c) == 1
+
+// Trigger
 
 function item_combo_achievements()
 {
@@ -1118,5 +1124,7 @@ function item_combo_achievements()
     trigger = scene_is_loaded() && in_academy() && create_all
     achievement("Almighty Alchemist", format("Create all {0} unique item combinations", length(all_items)), 100, trigger)
 }
+
+// Achievements
 
 item_combo_achievements()
