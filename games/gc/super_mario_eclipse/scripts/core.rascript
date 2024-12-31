@@ -533,7 +533,7 @@ castle_titles =
 	"Castle Basement": {"lives": "Water Drain"},
 	"Click Clock Wood": {"stars": "Click Clock"},
 	"Beta Bianco Hills": {"stars": "Bonus Surprise"},
-	"Secret Aquarium": {"stars": "Aquatic Advancment", "lives": "Slowly Drifting"},
+	"Secret Aquarium": {"stars": "Aquatic Advancement", "lives": "Slowly Drifting"},
 	"Battle Fort": {"stars": "Storm the Tower", "lives": "The Heat of Battle"},
 	"Sunshine Isles": {"stars": "Feel the Sunshine", "lives": "Palm Tree Fruit"},
 	"Starshine Beach": {"stars": "Back to the Future", "lives": "Stu Champion"},
@@ -933,6 +933,7 @@ for sub_area in castle_power_stars
 
 		if (star_count == 1) points = 3
 		else if (star_count >= 10) points = 10
+		else if sub_area == "False Block Nexus" points = 25
 		else points = 5
 
 		achievement
@@ -1005,7 +1006,7 @@ achievement("One Man Army", "Collect the first Shine Sprite in Delfino Airstrip 
 achievement("Taking the Scenic Route", "Enter the flooded Delfino Plaza without defeating the brown Gatekeeper above the Grand Pianta Statue", 25, !cheating() && get_flag([4, 0x70]) == 0 && in_area("Delfino Plaza") && episode() == 9, type="missable")
 
 achievement("Trade Days Tales", "Complete all trades within 1 minute in Episode 1 of Erto Rock", 10, !cheating() && in_area_episode("Erto Rock", 1) && timer() >= 24000 && trigger_when(collect_shine("Erto 1")))
-achievement("What's This Icky Paint-Like Goop?", "Fall victim to the quicksand goop in Episode 7 of Erto Rock", 1, !cheating() && in_area_episode("Erto Rock", 7) && mario_stand_goop() && trigger_when(mario_health() == 0))
+achievement("What's This Icky Paint-Like Goop?", "Fall victim to the quicksand goop in Episode 7 of Erto Rock", 1, !cheating() && in_area_episode("Erto Rock", 7) && mario_stand_goop() && prev(mario_health()) > 0 && trigger_when(mario_health() == 0 && mario_is_too_bad()))
 
 achievement("Not a Specialist", "Lose 8 life points at once to a mine in Episode 1 of Warship Island", 1, !cheating() && in_area_episode("Warship Island", 1) && prev(mario_health()) == 8 && trigger_when(mario_health() == 0 && mario_is_too_bad()))
 
