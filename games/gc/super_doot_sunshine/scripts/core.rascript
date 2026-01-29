@@ -346,7 +346,7 @@ SHINES = {
         },
         2: {
             "difficulty": 5,
-            "title": "Mysterious Hoten Durian",
+            "title": "Mysterious Hotel Durian",
             "description": "Complete Episode 3 of Sirena Beach",
             "address": bit(2, 0x57898d)
         },
