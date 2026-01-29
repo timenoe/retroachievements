@@ -2382,11 +2382,11 @@ function difficulty_to_points(difficulty)
     return 1
 }
 
-function create_flag_achievement(entry, id, badge)
+function create_flag_achievement(entry, id)
 {
     title = entry["title"]
     bit = entry["address"]
-    if (title == "Bowser")
+    if (title == "Cover Yourself in Oil")
     {
         trigger = context() == CONTEXT_MOVIE && bit > prev(bit)
     }
@@ -2398,9 +2398,8 @@ function create_flag_achievement(entry, id, badge)
         title = title,
         description = entry["description"],
         points = difficulty_to_points(entry["difficulty"]),
-        trigger = trigger
-        //id = id,
-        //badge = format("{0}", badge)
+        trigger = trigger,
+        id = id
     )
 }
 
@@ -2410,7 +2409,7 @@ CONTEXT_MOVIE = 6
 function course() => byte(0x3e970e)
 COURSE_AIRSTRIP = 0
 COURSE_DELFINO = 1
-COURSE_MAIN_MENU = 0xf
+COURSE_OPTIONS = 0xf
 COURSE_CORONA = 0x34
 COURSE_CORONA_BOWSER = 0x3c
 
@@ -2429,8 +2428,8 @@ achievement(
     title = "Let's Doot This",
     description = "Hit a hidden save block and start a new game",
     points = difficulty_to_points(1),
-    trigger = prev(course()) == COURSE_MAIN_MENU && course() == COURSE_AIRSTRIP
-    id = id,
+    trigger = prev(course()) == COURSE_OPTIONS && course() == COURSE_AIRSTRIP,
+    id = id
 )
 id = id + 1
 
@@ -2439,7 +2438,7 @@ for milestone in milestones
 {
     for event in EVENTS[milestone]
     {
-        create_flag_achievement(EVENTS[milestone][event], id, badge)
+        create_flag_achievement(EVENTS[milestone][event], id)
         id = id + 1
     }
     if (milestone == 8)
@@ -2448,8 +2447,8 @@ for milestone in milestones
             title = "Scuba Diving",
             description = "Collect 45 coins in Flooded Delfino",
             points = difficulty_to_points(3),
-            trigger = course() == COURSE_DELFINO && episode() == EPISODE_FLOODED_DELFINO && prev(coins()) < 45 && coins() >= 45
-            id = id,
+            trigger = course() == COURSE_DELFINO && episode() == EPISODE_FLOODED_DELFINO && prev(coins()) < 45 && coins() >= 45,
+            id = id
         )
         id = id + 1
     }
@@ -2459,20 +2458,20 @@ for milestone in milestones
             title = "Mark of Mastery",
             description = "Make it through Corona Mountain to Bowser",
             points = difficulty_to_points(9),
-            trigger = prev(course()) == COURSE_CORONA && course() == COURSE_CORONA_BOWSER
-            id = id,
+            trigger = prev(course()) == COURSE_CORONA && course() == COURSE_CORONA_BOWSER,
+            id = id
         )
         id = id + 1
     }
 
     for shine in SHINES[milestone]
     {
-        create_flag_achievement(SHINES[milestone][shine], id, badge)
+        create_flag_achievement(SHINES[milestone][shine], id)
         id = id + 1
     }
     for blue_coin in BLUE_COINS[milestone]
     {
-        create_flag_achievement(BLUE_COINS[milestone][blue_coin], id, badge)
+        create_flag_achievement(BLUE_COINS[milestone][blue_coin], id)
         id = id + 1
     }
 }
@@ -2481,6 +2480,6 @@ achievement(
     title = "Fruit of the Doot",
     description = "Collect all 120 Shine Sprites",
     points = 1,
-    trigger = prev(shines()) < 120 && measured(shines() == 120, when=__ornext(context() == CONTEXT_MOVIE || course() != COURSE_MAIN_MENU))
-    id = id,
+    trigger = prev(shines()) < 120 && measured(shines() == 120, when=__ornext(context() == CONTEXT_MOVIE || course() != COURSE_OPTIONS)),
+    id = id
 )
