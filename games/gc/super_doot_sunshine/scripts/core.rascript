@@ -1509,7 +1509,7 @@ BLUE_COINS = {
             "title": "[Pinna 2] Purple Door",
             "description": "Collect the \"Purple Door\" Blue Coin in Pinna 2",
             "address": bit(7, 0x5789b2),
-            "points": 50
+            "points": 5
         },
         3: {
             "ID": 20,
@@ -1517,7 +1517,7 @@ BLUE_COINS = {
             "title": "[Pinna 2] Secret Coin",
             "description": "Collect the \"Secret Coin\" Blue Coin in Pinna 2",
             "address": bit(4, 0x5789b2),
-            "points": 10
+            "points": 50
         },
         4: {
             "ID": 18,
@@ -1525,7 +1525,7 @@ BLUE_COINS = {
             "title": "[Pinna 3] Early Pink Awning",
             "description": "Collect the \"Early Pink Awning\" Blue Coin in Pinna 3",
             "address": bit(2, 0x5789b2),
-            "points": 5
+            "points": 10
         },
         5: {
             "ID": 15,
@@ -1799,7 +1799,7 @@ BLUE_COINS = {
             "title": "[Sirena 5] King Boo Camo M",
             "description": "Collect the \"King Boo Camo M\" Blue Coin in Sirena 5",
             "address": bit(7, 0x5789b9),
-            "points": 5
+            "points": 3
         },
         9: {
             "ID": 22,
@@ -1815,7 +1815,7 @@ BLUE_COINS = {
             "title": "[Sirena 5] Curtain Column",
             "description": "Collect the \"Curtain Column\" Blue Coin in Sirena 5",
             "address": bit(7, 0x5789b8),
-            "points": 1
+            "points": 5
         },
         11: {
             "ID": 25,
@@ -1823,7 +1823,7 @@ BLUE_COINS = {
             "title": "[Sirena 5] Black Camo M",
             "description": "Collect the \"Black Camo M\" Blue Coin in Sirena 5",
             "address": bit(3, 0x5789b9),
-            "points": 10
+            "points": 1
         },
         12: {
             "ID": 24,
@@ -1831,7 +1831,7 @@ BLUE_COINS = {
             "title": "[Sirena 5] Slot Machine",
             "description": "Collect the \"Slot Machine\" Blue Coin in Sirena 5",
             "address": bit(2, 0x5789b9),
-            "points": 3
+            "points": 10
         },
         13: {
             "ID": 11,
@@ -1919,7 +1919,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Behind Lamp",
             "description": "Collect the \"Behind Lamp\" Blue Coin in Sirena 8",
             "address": bit(4, 0x5789b8),
-            "points": 25
+            "points": 2
         },
         24: {
             "ID": 9,
@@ -1927,7 +1927,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Banana Split",
             "description": "Collect the \"Banana Split\" Blue Coin in Sirena 8",
             "address": bit(3, 0x5789b7),
-            "points": 25
+            "points": 3
         },
         25: {
             "ID": 23,
@@ -1935,7 +1935,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Attic M",
             "description": "Collect the \"Attic M\" Blue Coin in Sirena 8",
             "address": bit(1, 0x5789b9),
-            "points": 1
+            "points": 2
         },
         26: {
             "ID": 1,
@@ -1943,7 +1943,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Behind Hotel",
             "description": "Collect the \"Behind Hotel\" Blue Coin in Sirena 8",
             "address": bit(3, 0x5789b6),
-            "points": 3
+            "points": 25
         },
         27: {
             "ID": 16,
@@ -1951,7 +1951,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Under the Hotel",
             "description": "Collect the \"Under the Hotel\" Blue Coin in Sirena 8",
             "address": bit(2, 0x5789b8),
-            "points": 2
+            "points": 25
         },
         28: {
             "ID": 27,
@@ -1959,7 +1959,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Hut Camo M",
             "description": "Collect the \"Hut Camo M\" Blue Coin in Sirena 8",
             "address": bit(5, 0x5789b9),
-            "points": 3
+            "points": 1
         },
         29: {
             "ID": 17,
@@ -1967,7 +1967,7 @@ BLUE_COINS = {
             "title": "[Sirena 8] Shine Emblem",
             "description": "Collect the \"Shine Emblem\" Blue Coin in Sirena 8",
             "address": bit(3, 0x5789b8),
-            "points": 2
+            "points": 3
         }
     },
     6: {
@@ -2113,7 +2113,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Pillar 1",
             "description": "Collect the \"Pillar 1\" Blue Coin in Noki 8",
             "address": bit(3, 0x5789c5),
-            "points": 5
+            "points": 50
         },
         18: {
             "ID": 23,
@@ -2121,7 +2121,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Between 2 Large Pillars",
             "description": "Collect the \"Between 2 Large Pillars\" Blue Coin in Noki 8",
             "address": bit(5, 0x5789c5),
-            "points": 3
+            "points": 25
         },
         19: {
             "ID": 19,
@@ -2129,7 +2129,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Pillar 2",
             "description": "Collect the \"Pillar 2\" Blue Coin in Noki 8",
             "address": bit(1, 0x5789c5),
-            "points": 5
+            "points": 25
         },
         20: {
             "ID": 22,
@@ -2137,7 +2137,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Pillar 3",
             "description": "Collect the \"Pillar 3\" Blue Coin in Noki 8",
             "address": bit(4, 0x5789c5),
-            "points": 25
+            "points": 10
         },
         21: {
             "ID": 18,
@@ -2145,7 +2145,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Waterfall",
             "description": "Collect the \"Waterfall\" Blue Coin in Noki 8",
             "address": bit(0, 0x5789c5),
-            "points": 10
+            "points": 5
         },
         22: {
             "ID": 4,
@@ -2161,7 +2161,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Blocked Ice Cube",
             "description": "Collect the \"Blocked Ice Cube\" Blue Coin in Noki 8",
             "address": bit(3, 0x5789c3),
-            "points": 3
+            "points": 5
         },
         24: {
             "ID": 9,
@@ -2169,7 +2169,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Upper Cliffside Wall",
             "description": "Collect the \"Upper Cliffside Wall\" Blue Coin in Noki 8",
             "address": bit(7, 0x5789c3),
-            "points": 3
+            "points": 25
         },
         25: {
             "ID": 8,
@@ -2177,7 +2177,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Blocked Tricky Ruins",
             "description": "Collect the \"Blocked Tricky Ruins\" Blue Coin in Noki 8",
             "address": bit(6, 0x5789c3),
-            "points": 50
+            "points": 10
         },
         26: {
             "ID": 27,
@@ -2185,7 +2185,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Shine Emblem",
             "description": "Collect the \"Shine Emblem\" Blue Coin in Noki 8",
             "address": bit(1, 0x5789c6),
-            "points": 25
+            "points": 3
         },
         27: {
             "ID": 17,
@@ -2193,7 +2193,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Shell Column 2",
             "description": "Collect the \"Shell Column 2\" Blue Coin in Noki 8",
             "address": bit(7, 0x5789c4),
-            "points": 25
+            "points": 3
         },
         28: {
             "ID": 3,
@@ -2201,7 +2201,7 @@ BLUE_COINS = {
             "title": "[Noki 8] Shell Column 3",
             "description": "Collect the \"Shell Column 3\" Blue Coin in Noki 8",
             "address": bit(1, 0x5789c3),
-            "points": 10
+            "points": 3
         },
         29: {
             "ID": 20,
