@@ -420,7 +420,7 @@ class Game
         if (hard)
         {
             chain = []
-            for i in range(0, 11)
+            for i in range(0, 10)
             {
                 level = Level(i)
                 check = once(this.mode.adventure() && this.diff.hard() && this.tokens.earn() && monster.check() && level.check())

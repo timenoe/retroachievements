@@ -1,5 +1,5 @@
 // The Nightmare of Druaga: Fushigi no Dungeon
-// #ID = 22364
+// #ID = 32919
 // Author: timenoe
 
 // #region Dictionaries
@@ -867,18 +867,18 @@ titles =
             "Fine Healing Potion": "Aziel's Fine Healing Peppermint Petal",
             "Quality Healing Potion": "Aziel's Quality Healing Peppermint Petal",
             "Super Healing Potion": "Aziel's Super Healing Peppermint Petal",
-            "Garlic Leaf": "Aziel's Garlic Peppermint Petal",
-            "Garlic Petal": "Aziel's Garlic Peppermint Petal",
-            "Garlic Root": "Aziel's Garlic Peppermint Petal"
+            "Garlic Leaf": "Aziel's Garlic Peppermint Petal I",
+            "Garlic Petal": "Aziel's Garlic Peppermint Petal II",
+            "Garlic Root": "Aziel's Garlic Peppermint Petal III"
         },
         "Peppermint Leaf": {
             "Ability Potion": "Aziel's Ability Peppermint Leaf",
             "Fine Ability Potion": "Aziel's Fine Ability Peppermint Leaf",
             "Quality Ability Potion": "Aziel's Quality Ability Peppermint Leaf",
             "Super Ability Potion": "Aziel's Super Ability Peppermint Leaf",
-            "Garlic Leaf": "Aziel's Garlic Peppermint Leaf",
-            "Garlic Petal": "Aziel's Garlic Peppermint Leaf",
-            "Garlic Root": "Aziel's Garlic Peppermint Leaf"
+            "Garlic Leaf": "Aziel's Garlic Peppermint Leaf I",
+            "Garlic Petal": "Aziel's Garlic Peppermint Leaf II",
+            "Garlic Root": "Aziel's Garlic Peppermint Leaf III"
         },
         "Peppermint Root": {
             "Antidote Potion": "Aziel's Antidote Peppermint Root",
@@ -887,9 +887,9 @@ titles =
             "Poison Potion": "Aziel's Poison Peppermint Root",
             "Panic Potion": "Aziel's Panic Peppermint Root",
             "Energy-Drain Potion": "Aziel's Energy-Drain Peppermint Root",
-            "Garlic Leaf": "Aziel's Garlic Peppermint Root",
-            "Garlic Petal": "Aziel's Garlic Peppermint Root",
-            "Garlic Root": "Aziel's Garlic Peppermint Root"
+            "Garlic Leaf": "Aziel's Garlic Peppermint Root I",
+            "Garlic Petal": "Aziel's Garlic Peppermint Root II",
+            "Garlic Root": "Aziel's Garlic Peppermint Root III"
         },
         "Garlic Petal": {
             "Bronze Spike": "Aziel's Bronze Garlic Petal",
@@ -963,18 +963,18 @@ titles =
             "Fine Healing Potion": "Saija's Fine Healing Peppermint Petal",
             "Quality Healing Potion": "Saija's Quality Healing Peppermint Petal",
             "Super Healing Potion": "Saija's Super Healing Peppermint Petal",
-            "Garlic Leaf": "Saija's Garlic Peppermint Petal",
-            "Garlic Petal": "Saija's Garlic Peppermint Petal",
-            "Garlic Root": "Saija's Garlic Peppermint Petal"
+            "Garlic Leaf": "Saija's Garlic Peppermint Petal I",
+            "Garlic Petal": "Saija's Garlic Peppermint Petal II",
+            "Garlic Root": "Saija's Garlic Peppermint Petal III"
         },
         "Peppermint Leaf": {
             "Ability Potion": "Saija's Ability Peppermint Leaf",
             "Fine Ability Potion": "Saija's Fine Ability Peppermint Leaf",
             "Quality Ability Potion": "Saija's Quality Ability Peppermint Leaf",
             "Super Ability Potion": "Saija's Super Ability Peppermint Leaf",
-            "Garlic Leaf": "Saija's Garlic Peppermint Leaf",
-            "Garlic Petal": "Saija's Garlic Peppermint Leaf",
-            "Garlic Root": "Saija's Garlic Peppermint Leaf"
+            "Garlic Leaf": "Saija's Garlic Peppermint Leaf I",
+            "Garlic Petal": "Saija's Garlic Peppermint Leaf II",
+            "Garlic Root": "Saija's Garlic Peppermint Leaf III"
         },
         "Peppermint Root": {
             "Antidote Potion": "Saija's Antidote Peppermint Root",
@@ -983,9 +983,9 @@ titles =
             "Poison Potion": "Saija's Poison Peppermint Root",
             "Panic Potion": "Saija's Panic Peppermint Root",
             "Energy-Drain Potion": "Saija's Energy-Drain Peppermint Root",
-            "Garlic Leaf": "Saija's Garlic Peppermint Root",
-            "Garlic Petal": "Saija's Garlic Peppermint Root",
-            "Garlic Root": "Saija's Garlic Peppermint Root"
+            "Garlic Leaf": "Saija's Garlic Peppermint Root I",
+            "Garlic Petal": "Saija's Garlic Peppermint Root II",
+            "Garlic Root": "Saija's Garlic Peppermint Root III"
         },
         "Garlic Petal": {
             "Bronze Spike": "Saija's Bronze Garlic Petal",
@@ -1107,7 +1107,7 @@ function item_combo_achievements()
                 {
                     desc = format("Combine a {0} and a {1} with {2}", main, sub, npc)
                     points = 5
-                    trigger = addr > prev(addr)
+                    trigger = scene_is_loaded() && in_academy() && addr > prev(addr)
                 }
                 else if (length(items) == 2)
                 {

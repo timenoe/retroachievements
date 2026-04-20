@@ -1,5 +1,5 @@
 // Super Mario Sunshine [Subset - Coin Collector]
-// #ID = 28657
+// #ID = 6049
 // Author: timenoe
 // Date Published: 2024-02-24
 
@@ -103,6 +103,7 @@ courseIDs =
 courseStateIDs = 
 {
 	"dolpic9": 9,
+	"dolpic10": 2,
 	"Episode 1": 0,
 	"Episode 2": 1,
 	"Episode 3": 2,
@@ -310,9 +311,10 @@ function useSlotMachine()
 // #region Achievement/Leaderboard
 
 function enterCourseBroke(courseName) => once(inCourse(courseName) && inGameState("Enter") && coins() == 0)
+function enterCourseStateBroke(courseName, stateName) => once(inCourse(courseName) && inCourseState(stateName) && inGameState("Enter") && coins() == 0)
 
 achievement("Delfino Isle Treasure", "Collect 999 coins in Delfino Plaza, Red Coin Field, or Delfino Airstrip", 25, inAnyCourse(["Delfino Plaza", "Delfino Plaza - Red Coin Field", "Delfino Plaza - Delfino Airstrip"]) && prev(coins()) < 999 && coins() == 999)
-achievement("Delfino Plaza Treasure", "Enter Delfino Plaza with 0 coins and collect 152 coins without leaving", 25, never(inGameState("Loading")) && enterCourseBroke("Delfino Plaza") && trigger_when(coins() == 152))
+achievement("Delfino Plaza Treasure", "Enter Delfino Plaza with 0 coins after visiting Corona Mountain and collect 152 coins without leaving", 25, never(inGameState("Loading")) && enterCourseStateBroke("Delfino Plaza", "dolpic10") && trigger_when(coins() == 152))
 achievement("Delfino Airstrip Treasure", "Enter Delfino Airstrip with 0 coins and collect 149 coins without leaving", 25, never(inGameState("Loading")) && enterCourseBroke("Delfino Plaza - Delfino Airstrip") && trigger_when(coins() == 149))
 
 index = 0

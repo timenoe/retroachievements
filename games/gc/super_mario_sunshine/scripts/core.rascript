@@ -262,6 +262,7 @@ objectIDs =
 	"Lily Pad": 0x400000a5,
 	"Bianco Windmill": 0x400000a8,
 	"Corona Boat": 0x4000022e,
+	"Flagpole": 0x40000246,
 	"Moving Platform": 0x400002bd,
 	"Cloud": 0x400002c7,
 	"Coconut": 0x40000390,
@@ -1292,7 +1293,11 @@ function collectAnyOneUps(course, offsets, count)
 	for region in regions
 	{
 		oneUpChecks = []
-		for offset in offsets array_push(oneUpChecks, once(isOneUp(region, offset) && collectOneUp(region, offset)))
+		for offset in offsets
+		{
+			if (course == "Delfino Plaza") array_push(oneUpChecks, once(isOneUp(region, offset) && oneUpCollectState(region, offset) != 0 && collectOneUp(region, offset)))
+			else array_push(oneUpChecks, once(isOneUp(region, offset) && collectOneUp(region, offset)))
+		}
 		trigger = trigger || measured(tally(count, oneUpChecks), when=regionCheck(region) && inCourse(course) && courseStateCheck)
 	}
 	return never(inGameState("Loading")) && trigger
@@ -1912,8 +1917,8 @@ function pianta1Challenge()
 function pianta2Challenge()
 {
 	trigger = always_false()
-	for region in regions trigger = trigger || unless(!regionCheck(region)) && never(zCoordinate(region) < firstPiantaZBoundary && touchAnyOtherSurface(region, ["Tree Trunk"])) && once(zCoordinate(region) >= firstPiantaZBoundary)
-	return trigger && never(inGameState("Loading")) && inCourseAndEpisode("Pianta Village", 2) && inGameState("Active") && trigger_when(reachRaceFlag())
+	for region in regions trigger = trigger || unless(!regionCheck(region)) && never(zCoordinate(region) < firstPiantaZBoundary && touchAnyOtherSurface(region, ["Tree Trunk"])) && once(zCoordinate(region) >= firstPiantaZBoundary) && trigger_when(zCoordinate(region) < -10000.0 && climbObject(region, "Flagpole"))
+	return trigger && never(inGameState("Loading")) && inCourseAndEpisode("Pianta Village", 2) && inGameState("Active")
 }
 function pianta3Challenge()
 {
@@ -2218,7 +2223,7 @@ achievement("I'm a Chuckster!", "Collect all 3 1-Ups in The Secret of the Villag
 achievement("Rush to Relaxation", "Dive into the hot spring directly from the Shine Sprite platform during the daytime in Pianta Village", 5, piantaDiveChallenge())
 
 achievement("Remember, Always Be Kind to Your Pets!", "Complete Episode 1 of Pianta Village without stunning any Chain Chomplets", 5, pianta1Challenge())
-achievement("Pianta-line", "Reach the flagpole in Episode 2 of Pianta Village while only touching tree trunks past the first Pianta", 25, pianta2Challenge())
+achievement("Pianta-line", "Reach the flagpole in Episode 2 of Pianta Village while only touching tree trunks past the first Pianta", 25, pianta2Challenge(), id=399794, badge="452156")
 achievement("Improvise, Adapt, Overcome", "Complete Episode 3 of Pianta Village without going under the village or taking damage", 5, pianta3Challenge())
 achievement("Chain Chomp Whisperer", "Have the Chain Chomp jump into the spa in Episode 4 of Pianta Village while standing on the dirt path", 10, pianta4Challenge())
 achievement("Common Courtesy", "Collect the Shine Sprite in Secret of the Village Underside without enraging any Chucksters", 5, pianta5Challenge())

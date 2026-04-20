@@ -415,30 +415,30 @@ eclipse_one_ups =
 	// This WaterHitHideObj is set to spawn an extra 1-Up of type 0x2000
 	// However, it appears to be disabled
 	
-	"Tutorial": {"keys": [38002, 38002, 38002, 38002], "items": [28], "points": 10}, // Verified
+	"Tutorial": {"keys": [38002, 38002, 38002, 38002], "items": [28], "points": 10}, // Verified AGAIN
 	"Corona Mountain - Fire Shrine": {"keys": [14482, 14483], "items": [44], "points": 3},
 	"Erto Rock": {"keys": [23827, 23827], "items": [157, 168, 168, 168, 168, 168, 169, 161], "points": 5}, // Verified
 	"Secret of the Shed": {"keys": [14482, 14483], "items": [33], "points": 3}, // Verified
-	"Lighthouse Island": {"keys": [14483, 14483, 23827], "items": [215, 222, 222, 222, 222, 223, 224, 223], "points": 5},
-	"Secret of the Basement": {"keys": [14483, 14483], "items": [32], "points": 3}, // Verified
-	"Warship Island": {"keys": [23827, 23827, 38002, 38002], "items": [201, 201, 209, 209, 209, 209, 208, 208], "points": 5},
-	"(Sub) Marine Biology Secret": {"keys": [14483, 14483], "items": [32], "points": 3}, // Verified
-	"Lacrima Beach": {"keys": [38002], "items": [110, 110, 110, 110, 110, 110, 110, 110], "points": 1}, // Verified
+	"Lighthouse Island": {"keys": [43497, 43498, 23827], "items": [215, 222, 222, 222, 222, 223, 224, 223], "points": 5}, // Verified AGAIN
+	"Secret of the Basement": {"keys": [43497, 43498], "items": [32], "points": 3}, // Verified AGAIN
+	"Warship Island": {"keys": [23827, 23827, 48518, 48519], "items": [201, 201, 209, 209, 209, 209, 208, 208], "points": 5}, // Verified AGAIN
+	"(Sub) Marine Biology Secret": {"keys": [43497, 43498], "items": [32], "points": 3}, // Verified AGAIN
+	"Lacrima Beach": {"keys": [38002], "items": [110, 110, 110, 110, 110, 110, 110, 110], "points": 1}, // Verified AGAIN
 	"Hotel Lacrima": {"keys": [23827], "items": [67, 68, 68, 68, 68, 68, 67, 68], "points": 2},
-	"Secret of the Air Vent": {"keys": [14483, 14483, 14483], "items": [36], "points": 0},
-	"Pianta Pit": {"keys": [38002, 38002, 38002, 38002, 38002, 38002], "items": [255], "points": 10}, // Verified
-	"Daisy Cruiser": {"keys": [38002, 38002, 38002, 38002], "items": [196, 196, 196, 196, 22], "points": 5}, // Verified
-	"Planes and Trains": {"keys": [38002, 38002], "items": [32], "points": 5}, // Verified
-	"Mario's Dream": {"keys": [38002, 38002, 38002, 38002], "items": [217, 209, 209, 209], "points": 5}, // Verified
-	"Lancia Fredda Peaks": {"keys": [23827, 38002, 38002, 38002], "items": [149, 149, 149, 149], "points": 10}, // Verified (OOB glitch required)
-	"Secret of the Ice Cave": {"keys": [38002, 38002], "items": [24], "points": 10}, // Verified (very hard)
-	"Vaporwave": {"keys": [38002], "items": [94, 94, 94, 94], "points": 1}, // Verified
-	"Memphis Mania": {"keys": [38002, 38002], "items": [173], "points": 3}, // Verified
-	"Yoshi Village": {"keys": [14483, 14483, 14483, 14483, 23827, 23827, 23827, 23827, 23827, 23827, 23827, 23827], "items": [101, 118, 118, 118], "points": 10}, // Must be done in Episode 1
-	"Red Lily City": {"keys": [14483, 14483, 14483, 23827], "items": [128, 170, 170, 170], "points": 5},
-	"Peach Beach": {"keys": [14483, 14483, 14483, 23827, 23827], "items": [106, 110, 181, 181], "points": 5}, // Impossible in Beta v4
-	"Spettro Casino": {"keys": [14483], "items": [174, 174, 174, 174], "points": 1}, // Verified
-	"Secret of the Haunted Rook": {"keys": [38002, 38002], "items": [24], "points": 3} // Verified
+	"Secret of the Air Vent": {"keys": [14483, 14483, 14483], "items": [36], "points": 3},
+	"Pianta Pit": {"keys": [48518, 48519, 48520, 48521, 48522, 48523], "items": [255], "points": 10}, // Verified AGAIN (reduced items from 255 to 225 due to ach limit)
+	"Daisy Cruiser": {"keys": [48518, 48519, 48520, 48521], "items": [196, 196, 196, 196, 22], "points": 5}, // Verified AGAIN
+	"Planes and Trains": {"keys": [48518, 48519], "items": [32], "points": 5}, // Verified AGAIN
+	"Mario's Dream": {"keys": [48518, 48519, 48520, 48521], "items": [217, 209, 209, 209], "points": 5}, // Verified AGAIN
+	"Lancia Fredda Peaks": {"keys": [23827, 48518, 48519, 48520], "items": [149, 149, 149, 149], "points": 10}, // Verified AGAIN (OOB glitch required)
+	"Secret of the Ice Cave": {"keys": [48518, 48519], "items": [24], "points": 10}, // Verified AGAIN (very hard)
+	"Vaporwave": {"keys": [48518], "items": [94, 94, 94, 94], "points": 1}, // Verified AGAIN
+	"Memphis Mania": {"keys": [48518, 48519], "items": [173], "points": 3}, // Verified AGAIN
+	"Yoshi Village": {"keys": [43497, 43498, 43499, 43500, 23827, 23827, 23827, 23827, 23827, 23827, 23827, 23827], "items": [101, 118, 118, 118], "points": 10}, // Verified AGAIN Must be done in Episode 1
+	"Red Lily City": {"keys": [43497, 43498, 43499, 23827], "items": [128, 170, 170, 170], "points": 5}, // Verified AGAIN
+	"Peach Beach": {"keys": [43497, 43498, 43499, 23827, 23827], "items": [106, 110, 181, 181], "points": 5}, // Verified AGAIN Impossible in Beta v4
+	"Spettro Casino": {"keys": [14483], "items": [174, 174, 174, 174], "points": 1}, // Verified AGAIN
+	"Secret of the Haunted Rook": {"keys": [48518, 48519], "items": [24], "points": 3} // Verified AGAIN
 }
 castle_power_stars = 
 {
@@ -476,17 +476,17 @@ castle_power_stars =
 }
 castle_one_ups = 
 {
-    "Castle Basement":  {"keys": [38002, 38002], "items": [24], "points": 2},
-	"Secret Aquarium": {"keys": [38002], "items": [71], "points": 1},
-	"Battle Fort": {"keys": [14482, 14482], "items": [57], "points": 3},
-	"Sunshine Isles": {"keys": [38002], "items": [44], "points": 1},
-	"Starshine Beach": {"keys": [21377, 21378, 21379, 23827, 38002, 38002, 38002, 38002, 51904], "items": [194], "points": 10},
+    "Castle Basement":  {"keys": [48518, 48519], "items": [24], "points": 2}, // AGAIN
+	"Secret Aquarium": {"keys": [48518], "items": [71], "points": 1}, // AGAIN
+	"Battle Fort": {"keys": [43494, 43495], "items": [57], "points": 3}, // AGAIN
+	"Sunshine Isles": {"keys": [48518], "items": [44], "points": 1}, // AGAIN
+	"Starshine Beach": {"keys": [21377, 21378, 21379, 23827, 48518, 48519, 48520, 48521, 51904], "items": [194], "points": 10}, // AGAIN
 	"E3 Dolpic Town": {"keys": [14482, 14483, 14484], "items": [142], "points": 10}, // Verified (OOB glitch required)
 	"Beta Shell Secret": {"keys": [23827, 23827, 23827], "items": [33], "points": 3},
 	"Epicwade Easter Egg": {"keys": [14482], "items": [56], "points": 1},
 	"Super Galaxy": {"keys": [14483], "items": [134], "points": 2},
-	"Windfall Island": {"keys": [14482, 14482, 14482], "items": [113], "points": 5},
-	"Lancia Fredda Peaks v1": {"keys": [14482, 14482, 14482, 14482, 14482, 14482, 14482], "items": [144], "points": 10},
+	"Windfall Island": {"keys": [14482, 14483, 14484], "items": [113], "points": 5},
+	"Lancia Fredda Peaks v1": {"keys": [43494, 43495, 43496, 43497, 43498, 43499, 43500], "items": [144], "points": 10},
 	"False Block Nexus": {"keys": [23827], "items": [33], "points": 10}, // Verified (hidden and obscure)
 }
 titles = 
@@ -503,7 +503,7 @@ titles =
 	"Pianta Village": {"shines": "Assimilation", "blues": "Nature's Bounty"},
 	"Corona Mountain": {"blues": "Volcanic Metamorphism"},
 	"Corona Mountain - Fire Shrine": {"lives": "Blessing of the Shrine"},
-	"Erto Rock": {"shines": "Ain’t No Mountain High Enough", "blues": "Sifting for Blues", "lives": "Roasted Butterflies"},
+	"Erto Rock": {"shines": "Ain't No Mountain High Enough", "blues": "Sifting for Blues", "lives": "Roasted Butterflies"},
 	"Secret of the Shed": {"lives": "Sharpest Tools in the Shed"},
 	"Lighthouse Island": {"shines": "Light the Way", "blues": "Shell City Souvenirs", "lives": "Coral Blue #5"},
 	"Secret of the Basement": {"lives": "Mushrooms Galore"},
@@ -644,7 +644,7 @@ function area() => byte(0x3e970e)
 function episode() => byte(0x3e970f)
 function next_area() => byte(0x3e9712)
 
-function character() => byte(0x558c10) // *
+function character() => byte(0x55df4c) // *
 function is_character_alt(character)
 {
 	if (character == "Mario") return character() == 0
@@ -652,9 +652,8 @@ function is_character_alt(character)
 	else if (character == "Il Piantissimo") return character() == 2
 }
 
-// function bugs_exploits() => byte(0x559348) == 1 // *
-function bugs_exploits() => byte(dword_be(0x4fa984) + 0x80000000 + 0x74) == 1 // *
-function debug_mode() => byte(0x4f9bfd) == 1 // *
+function bugs_exploits() => byte(0x55e684) == 1 // *
+function debug_mode() => byte(0x4feb7d) == 1 // *
 function cheating() => bugs_exploits() || debug_mode()
 
 function valid_flags() => t_flag_manager() != 0 && __ornext(!in_area("Title Screen") || context_movie())
@@ -715,7 +714,8 @@ function collect_one_ups(area, episode, dict)
 
 	// Due to the RA character limit, I can't check every item slot for Starshine Beach
 	// So I ignore the first 19 item slots, which are unrelated to 1-Ups
-	if (episode == "Starshine Beach") ignore_items = 21
+	if (area == "Pianta Pit") ignore_items = 75
+	else if (episode == "Starshine Beach") ignore_items = 75
 	else ignore_items = 0
 
 	max_items = 0

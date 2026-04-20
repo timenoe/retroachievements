@@ -1,5 +1,5 @@
 // Super Mario Sunshine [Subset - Bonus]
-// #ID = 28562
+// #ID = 6049
 // Author: timenoe
 // Date Published: 2024-??-??
 
@@ -704,6 +704,7 @@ objectIDs =
 	"1-Up Mushroom (Normal)": 0x20000005, 
 	"1-Up Mushroom (Repel)": 0x20000006,
 	"1-Up Mushroom (Attract)": 0x20000007,
+	"Nozzle Box": 0x20000068,
 	"Spring": 0x40000017,
 	"Pole": 0x4000002f,
 	"Palm Tree": 0x40000039,
@@ -1391,7 +1392,7 @@ function qfTimer() => dword_be(gamePtr() + 0x5c)
 function redCoins() => regionDword(0x578a7c)
 function shines() => regionDword(0x578a58)
 function timer() => dword_be(hudPtr() + 0x500)
-function context() => byte(0x3e9708)
+function context() => byte(regionPtr() + 0x8)
 function cStickAngle() => word_be(inputPtr() + 0x180)
 
 function animation(region) => word_be(animationPtr(region) + 0x84)
@@ -1613,6 +1614,7 @@ function useAnyNozzle(region, nozzleNames)
 }
 function useNozzle(region, nozzleName) => byte(fluddPtr(region) + 0x1c84) == nozzleIDs[nozzleName] && byte(fluddPtr(region) + 0x1c86) == 1
 function useNozzleOnce(region, nozzleName) => byte(fluddPtr(region) + 0x1c84) == nozzleIDs[nozzleName] && byte(fluddPtr(region) + 0x1c86) > prev(byte(fluddPtr(region) + 0x1c86))
+function useNozzleOnceAlt(region, nozzleName) => byte(fluddPtr(region) + 0x1c84) == nozzleIDs[nozzleName] && prev(fluddState(region)) != 0 && fluddState(region) == 0
 function hasNozzleEquipped(region, nozzleName) => byte(fluddPtr(region) + 0x1c85) == nozzleIDs[nozzleName]
 function useFludd(region) => fluddState(region) == 0
 function wasGrounded(region) => prev(yCoordinate(region)) == prev(float_be(gpMarioOriginal(region) + 0xec))
@@ -1880,8 +1882,8 @@ function hiddenRocketNozzleBox()
 	trigger = always_false()
 	for region in regions
 	{
-		trigger = trigger || regionCheck(region) && !inCourseState("dolpic9") && consumeItem(region, 0x270)
-		trigger = trigger || regionCheck(region) && inCourseState("dolpic9") && consumeItem(region, 0xb8)
+		trigger = trigger || regionCheck(region) && !inCourseState("dolpic9") && itemCheck(region, 0x270, "Nozzle Box") && consumeItem(region, 0x270)
+		trigger = trigger || regionCheck(region) && inCourseState("dolpic9") && itemCheck(region, 0xb8, "Nozzle Box") && consumeItem(region, 0xb8)
 	}
 	return trigger && inCourse("Delfino Plaza") && inGameState("Active")
 }
@@ -1923,7 +1925,7 @@ function topOfPachinkoCheat()
 function turboTrackChallenge()
 {
 	trigger = always_false()
-	for region in regions trigger = trigger || unless(!regionCheck(region)) && never(tally(2, useNozzleOnce(region, "Hover")) || useAnyNozzle(region, ["Rocket", "Turbo"]))
+	for region in regions trigger = trigger || unless(!regionCheck(region)) && never(tally(2, useNozzleOnceAlt(region, "Hover")) || useAnyNozzle(region, ["Rocket", "Turbo"]))
 	return trigger && never(inGameState("Loading")) && enterCourse("Delfino Plaza - Turbo Track") && inGameState("Active") && trigger_when(collectShine("Turbo Track"))
 }
 
@@ -2400,7 +2402,7 @@ achievement("Stairway to Heaven", "Touch the ceiling of Gelato Beach", 5, ceilin
 achievement("Style Points", "Collect the normal Shine Sprite in the Dune Bud Sand Castle Secret without moving past the first row of cubes in the final area or using F.L.U.D.D.", 25, gelato1Challenge())
 achievement("Tightrope Performance", "Align all 3 mirrors while standing on a rope in Episode 2 of Gelato Beach", 50, ropeMirrors())
 achievement("Thank You Touval", "Complete Episode 8 of Gelato Beach while in a different episode using the Hover Nozzle", 25, gbs())
-achievement("Open Bar", "Complete Episode 8 of Gelato Beach while in a different episode without using the Hover Nozzle", 100, gbsHoverless())
+achievement("Open Bar", "Complete Episode 8 of Gelato Beach while in a different episode without using the Hover Nozzle", 25, gbsHoverless())
 
 // #endregion
 
