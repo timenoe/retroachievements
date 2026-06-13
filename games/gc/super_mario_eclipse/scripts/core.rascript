@@ -103,7 +103,7 @@ episode_ids =
 	"Castle Floor 1": 0x02,
 	"Castle Floor 2": 0x03,
 	"Castle Basement": 0x04,
-	"Click Clock Wood": 0x05,
+	// "Click Clock Wood (Old)": 0x05,
 	"Beta Bianco Hills": 0x06,
 	"Secret Aquarium": 0x07,
 	"Battle Fort": 0x08,
@@ -128,7 +128,11 @@ episode_ids =
 	"Isle Medusa": 0x1b,
 	"Waterpark": 0x1c,
 	"Lily Pad Obstacle Course": 0x1d,
-	"N. Sanity Jungle": 0x1e
+	"N. Sanity Jungle": 0x1e,
+	"Beta Vaporwave": 0x1f,
+	"New Plaza": 0x20,
+	"Click Clock Wood": 0x21,
+	"Beta Memphis": 0x22,
 }
 
 shine_ids = 
@@ -447,7 +451,7 @@ castle_power_stars =
 	"Castle Floor 1": {"keys": [34717]},
 	"Castle Floor 2": {"keys": [3099, 34717]},
 	"Castle Basement": {"keys": [34717]},
-	"Click Clock Wood": {"keys": [34717, 37472]},
+	// "Click Clock Wood (Old)": {"keys": [34717, 37472]},
 	"Beta Bianco Hills": {"keys": [34717, 60574]},
 	"Secret Aquarium": {"keys": [37472]},
 	"Battle Fort": {"keys": [34717, 37472]}, // 63380 is unused
@@ -472,22 +476,29 @@ castle_power_stars =
 	"Isle Medusa": {"keys": [34717, 37472]},
 	"Waterpark": {"keys": [34717, 37472]},
 	"Lily Pad Obstacle Course": {"keys": [3099, 34717, 37472]},
-	"N. Sanity Jungle": {"keys": [3184, 34717]}
+	"N. Sanity Jungle": {"keys": [3184, 34717]},
+	"Beta Vaporwave": {"keys": [17987, 39248]},
+	"New Plaza": {"keys": [37472]},
+	"Click Clock Wood": {"keys": [37472]},
+	"Beta Memphis": {"keys": [39248, 46044]},
 }
 castle_one_ups = 
 {
-    "Castle Basement":  {"keys": [48518, 48519], "items": [24], "points": 2}, // AGAIN
-	"Secret Aquarium": {"keys": [48518], "items": [71], "points": 1}, // AGAIN
-	"Battle Fort": {"keys": [43494, 43495], "items": [57], "points": 3}, // AGAIN
-	"Sunshine Isles": {"keys": [48518], "items": [44], "points": 1}, // AGAIN
-	"Starshine Beach": {"keys": [21377, 21378, 21379, 23827, 48518, 48519, 48520, 48521, 51904], "items": [194], "points": 10}, // AGAIN
-	"E3 Dolpic Town": {"keys": [14482, 14483, 14484], "items": [142], "points": 10}, // Verified (OOB glitch required)
+    "Castle Basement":  {"keys": [48518, 48519], "items": [24], "points": 2},
+	"Secret Aquarium": {"keys": [48518], "items": [71], "points": 1},
+	"Battle Fort": {"keys": [43494, 43495], "items": [57], "points": 3},
+	"Sunshine Isles": {"keys": [48518], "items": [44], "points": 1},
+	"Starshine Beach": {"keys": [21377, 21378, 21379, 23827, 48518, 48519, 48520, 48521, 51904], "items": [194], "points": 10},
+	"E3 Dolpic Town": {"keys": [14482, 14483, 14484], "items": [142], "points": 10}, // (OOB glitch required)
 	"Beta Shell Secret": {"keys": [23827, 23827, 23827], "items": [33], "points": 3},
 	"Epicwade Easter Egg": {"keys": [14482], "items": [56], "points": 1},
 	"Super Galaxy": {"keys": [14483], "items": [134], "points": 2},
 	"Windfall Island": {"keys": [14482, 14483, 14484], "items": [113], "points": 5},
 	"Lancia Fredda Peaks v1": {"keys": [43494, 43495, 43496, 43497, 43498, 43499, 43500], "items": [144], "points": 10},
-	"False Block Nexus": {"keys": [23827], "items": [33], "points": 10}, // Verified (hidden and obscure)
+	// "False Block Nexus": {"keys": [23827], "items": [33], "points": 10}, // (too obscure)
+	"Beta Vaporwave": {"keys": [38002], "items": [90], "points": 1},
+	"New Plaza": {"keys": [14482, 14483, 14484], "items": [92], "points": 5}, // (too similar to normal plaza)
+	"Beta Memphis": {"keys": [38002, 38002], "items": [115], "points": 3}
 }
 titles = 
 {
@@ -531,7 +542,6 @@ castle_titles =
 {
 	"Castle Floor 2": {"stars": "Haunting Serenity"},
 	"Castle Basement": {"lives": "Water Drain"},
-	"Click Clock Wood": {"stars": "Click Clock"},
 	"Beta Bianco Hills": {"stars": "Bonus Surprise"},
 	"Secret Aquarium": {"stars": "Aquatic Advancement", "lives": "Slowly Drifting"},
 	"Battle Fort": {"stars": "Storm the Tower", "lives": "The Heat of Battle"},
@@ -556,7 +566,11 @@ castle_titles =
 	"Isle Medusa": {"stars": "Island of Stone"},
 	"Waterpark": {"stars": "Slip and Slide"},
 	"Lily Pad Obstacle Course": {"stars": "Flip Flop"},
-	"N. Sanity Jungle": {"stars": "Lump of Wumpa"}
+	"N. Sanity Jungle": {"stars": "Lump of Wumpa"},
+	"Beta Vaporwave": {"stars": "Ride the Wave", "lives": "Basic Shapes"},
+	"New Plaza": {"stars": "Home Renovation", "lives": "Familiar Route"},
+	"Click Clock Wood": {"stars": "Click Clock"},
+	"Beta Memphis": {"stars": "Postmodern Aesthetic", "lives": "Color Theory"},
 }
 
 // Pointers
@@ -644,16 +658,17 @@ function area() => byte(0x3e970e)
 function episode() => byte(0x3e970f)
 function next_area() => byte(0x3e9712)
 
-function character() => byte(0x55df4c) // *
+function character() => byte(0x56c86c) // *
 function is_character_alt(character)
 {
 	if (character == "Mario") return character() == 0
 	else if (character == "Luigi") return character() == 1
 	else if (character == "Il Piantissimo") return character() == 2
+	else if (character == "Shadow Mario") return character() == 3
 }
 
-function bugs_exploits() => byte(0x55e684) == 1 // *
-function debug_mode() => byte(0x4feb7d) == 1 // *
+function bugs_exploits() => byte(0x56d090) == 1 // *
+function debug_mode() => byte(0x5065e1) == 1 // *
 function cheating() => bugs_exploits() || debug_mode()
 
 function valid_flags() => t_flag_manager() != 0 && __ornext(!in_area("Title Screen") || context_movie())
@@ -1005,54 +1020,54 @@ achievement("One Man Army", "Collect the first Shine Sprite in Delfino Airstrip 
 
 achievement("Taking the Scenic Route", "Enter the flooded Delfino Plaza without defeating the brown Gatekeeper above the Grand Pianta Statue", 25, !cheating() && get_flag([4, 0x70]) == 0 && in_area("Delfino Plaza") && episode() == 9, type="missable")
 
-achievement("Trade Days Tales", "Complete all trades within 1 minute in Episode 1 of Erto Rock", 10, !cheating() && in_area_episode("Erto Rock", 1) && timer() >= 24000 && trigger_when(collect_shine("Erto 1")))
+// achievement("Trade Days Tales", "Complete all trades within 1 minute in Episode 1 of Erto Rock", 10, !cheating() && in_area_episode("Erto Rock", 1) && timer() >= 24000 && trigger_when(collect_shine("Erto 1")))
 achievement("What's This Icky Paint-Like Goop?", "Fall victim to the quicksand goop in Episode 7 of Erto Rock", 1, !cheating() && in_area_episode("Erto Rock", 7) && mario_stand_goop() && prev(mario_health()) > 0 && trigger_when(mario_health() == 0 && mario_is_too_bad()))
 
 achievement("Not a Specialist", "Lose 8 life points at once to a mine in Episode 1 of Warship Island", 1, !cheating() && in_area_episode("Warship Island", 1) && prev(mario_health()) == 8 && trigger_when(mario_health() == 0 && mario_is_too_bad()))
 
-achievement("Fire Shot", "Make 15 baskets during the ball-tossing challenge in Hotel Lacrima", 10, unless(cheating()) && never(timer() == 0) && in_area("Hotel Lacrima") && measured(repeated(15, mario_x() < 2850.0 && ball_toss_counter() > prev(ball_toss_counter())), when=timer_active()))
+// achievement("Fire Shot", "Make 15 baskets during the ball-tossing challenge in Hotel Lacrima", 10, unless(cheating()) && never(timer() == 0) && in_area("Hotel Lacrima") && measured(repeated(15, mario_x() < 2850.0 && ball_toss_counter() > prev(ball_toss_counter())), when=timer_active()))
 achievement("Employee of the Month", "Complete the pizza delivery job within 1 second in Episode 8 of Hotel Lacrima", 10, !cheating() && in_area_episode("Hotel Lacrima", 8) && active() && prev(timer_active()) && timer() >= 14900 && trigger_when(pizza_complete()))
 achievement("The Great Anticlimax", "Defeat the Hinokuri2 in the Hotel Lacrima mafia hideout", 5, !cheating() && in_area("Lacrima Mafia Lair") && episode() != 0 && trigger_when(defeat_enemy(gp_cur_hinokuri())))
 
 achievement("This Is Fine", "Talk to the Yoshi in the flaming house in Episode 1 of Yoshi Village", 5, !cheating() && in_area_episode("Yoshi Village", 1) && trigger_when(mario_talk_specific_npc(62909)))
 
-achievement("Oooh, Banana!", "Reach the finish line within 30 seconds in Episode 2 of Peach Beach", 10, !cheating() && in_area_episode("Peach Beach", 2) && prev(timer_active()) && timer() <= 3000 && trigger_when(track_complete()))
+achievement("Oooh, Banana!", "Reach the finish line within 30 seconds in Episode 2 of Peach Beach (no Shadow Mario)", 10, !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Peach Beach", 2) && prev(timer_active()) && timer() <= 3000 && trigger_when(track_complete()))
 
 achievement("Mario's Greatest Hater", "Talk to the brown Pianta in Ricco Station", 1, !cheating() && in_area_episode_name("Isle Delfino", "Ricco Station") && trigger_when(mario_talk_specific_npc(36725)))
 
-achievement("L Is Real", "Approach the star statue in the courtyard of Peach's Castle as Luigi", 3, !cheating() && is_character("Luigi") && in_area("Peach's Castle") && in_episode("Castle Courtyard (Revisited)") && trigger_when(mario_z() >= 12000.0 && mario_stand_water()))
+achievement("L Is Real", "Approach the star statue in the courtyard of Peach's Castle as Luigi", 3, !cheating() && is_character_alt("Luigi") && in_area("Peach's Castle") && in_episode("Castle Courtyard (Revisited)") && trigger_when(mario_z() >= 12000.0 && mario_stand_water()))
 
-achievement("Teamwork Makes the Dream Work", "Get thrown directly into a Shine Sprite by a Chuckster", 5, unless(cheating()) && disable_when(repeated(20, mario_state() != mario_state_ids["THROWN"]), until=mario_talk_npc()) && never(loading() || mario_sub_state() != 0) && once(mario_state() == mario_state_ids["THROWN"]) && trigger_when(mario_grab_shine()))
-achievement("Don’t Compare Yourself to Others", "Challenge Il Piantissimo to a race while playing as him", 2, !cheating() && is_character("Il Piantissimo") && in_monteman_race_area() && trigger_when(start_timer()))
+// achievement("Teamwork Makes the Dream Work", "Get thrown directly into a Shine Sprite by a Chuckster", 5, unless(cheating()) && disable_when(repeated(20, mario_state() != mario_state_ids["THROWN"]), until=mario_talk_npc()) && never(loading() || mario_sub_state() != 0) && once(mario_state() == mario_state_ids["THROWN"]) && trigger_when(mario_grab_shine()))
+achievement("Don't Compare Yourself to Others", "Challenge Il Piantissimo to a race while playing as him", 2, !cheating() && is_character_alt("Il Piantissimo") && in_monteman_race_area() && trigger_when(start_timer()))
 
 // Leaderboards
 
 secret_reds_areas = ["Secret of the Shed", "Secret of the Basement", "(Sub) Marine Biology Secret", "Secret of the Air Vent", "Planes and Trains"]
-for area in secret_reds_areas leaderboard(area + " Reds Speedrun (IGT)", "Collect all 8 Red Coins as fast as possible in " + area, !cheating() && in_area(area) && prev(timer_active()) && reach_count(red_coins(), 8), always_false(), always_true(), timer(), format="MILLISECS")
+for area in secret_reds_areas leaderboard(area + " Reds Speedrun (IGT)", "Collect all 8 Red Coins as fast as possible in " + area, !cheating() && !is_character_alt("Shadow Mario") && in_area(area) && prev(timer_active()) && reach_count(red_coins(), 8), always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Erto Rock 1 Speedrun (IGT) (Removed)", "Complete all trades as fast as possible in Erto Rock 1", always_false() && !cheating() && in_area_episode("Erto Rock", 1) && collect_shine("Erto 1"), always_false(), always_true(), timer(), format="MILLISECS")
-leaderboard("Erto Rock 6 Speedrun (IGT)", "Rescue all 10 Piantas as fast as possible in Erto Rock 6", !cheating() && in_area_episode("Erto Rock", 6) && prev(timer_active()) && reach_count(piantas_rescued(), 10), always_false(), always_true(), timer(), format="MILLISECS")
+// leaderboard("Erto Rock 1 Speedrun (IGT) (Removed)", "Complete all trades as fast as possible in Erto Rock 1", always_false() && !cheating() && in_area_episode("Erto Rock", 1) && collect_shine("Erto 1"), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Erto Rock 6 Speedrun (IGT)", "Rescue all 10 Piantas as fast as possible in Erto Rock 6", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Erto Rock", 6) && prev(timer_active()) && reach_count(piantas_rescued(), 10), always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Lighthouse Island 6 Speedrun (IGT)", "Reach the flag as fast as possible during the race against Il Piantissimo in Lighthouse Island 6", !cheating() && in_area_episode("Lighthouse Island", 6) && prev(timer_active()) && reach_race_flag(), always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
+leaderboard("Lighthouse Island 6 Speedrun (IGT)", "Reach the flag as fast as possible during the race against Il Piantissimo in Lighthouse Island 6", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Lighthouse Island", 6) && prev(timer_active()) && reach_race_flag(), always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
 
-leaderboard("Lighthouse Island 8 Speedrun (IGT)", "Complete a lap with a Blooper as fast as possible in Lighthouse Island 8", !cheating() && in_area_episode("Lighthouse Island", 8) && prev(timer_active()) && reach_count(blooper_checkpoint(), 8), always_false(), always_true(), timer(), format="MILLISECS")
-leaderboard("Lighthouse Island Timer Speedrun (IGT)", "Climb to the top of the lighthouse as fast as possible in Lighthouse Island", !cheating() && in_area("Lighthouse Island Lighthouse") && episode() == 1 && prev(timer_active()) && warp_to_area("Lighthouse Island"), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Lighthouse Island 8 Speedrun (IGT)", "Complete a lap with a Blooper as fast as possible in Lighthouse Island 8", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Lighthouse Island", 8) && prev(timer_active()) && reach_count(blooper_checkpoint(), 8), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Lighthouse Island Timer Speedrun (IGT)", "Climb to the top of the lighthouse as fast as possible in Lighthouse Island", !cheating() && !is_character_alt("Shadow Mario") && in_area("Lighthouse Island Lighthouse") && episode() == 1 && prev(timer_active()) && warp_to_area("Lighthouse Island"), always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Hotel Lacrima 8 Speedrun (IGT)", "Complete the pizza delivery job as fast as possible in Hotel Lacrima 8", !cheating() && in_area_episode("Hotel Lacrima", 8) && prev(timer_active()) && pizza_complete(), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Hotel Lacrima 8 Speedrun (IGT)", "Complete the pizza delivery job as fast as possible in Hotel Lacrima 8", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Hotel Lacrima", 8) && prev(timer_active()) && pizza_complete(), always_false(), always_true(), timer(), format="MILLISECS")
 leaderboard("Hotel Lacrima Ball Toss High Score", "Complete the ball-tossing challenge with the most baskets made in Hotel Lacrima", !cheating() && in_area("Hotel Lacrima") && prev(timer_active()) && ball_toss_win(), always_false(), always_true(), ball_toss_counter())
 
 // May need to change get_flag([4, 0x1f8]) to get_flag([0, 0x1f8]) if that ever gets fixed
-leaderboard("Booty Scooting Safari Speedrun (IGT)", "Reach the end of the slide as fast as possible in Lacrima 3", !cheating() && in_area("Booty Scooting Safari") && prev(timer_active()) && booty_end() && get_flag([4, 0x1f8]) == 0, always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
-leaderboard("Booty Scooting Safari (Revisited) Speedrun (IGT)", "Reach the end of the slide as fast as possible in Lacrima 3 (Revisited)", !cheating() && in_area("Booty Scooting Safari") && prev(timer_active()) && booty_end() && get_flag([4, 0x1f8]) == 1, always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Booty Scooting Safari Speedrun (IGT)", "Reach the end of the slide as fast as possible in Lacrima 3", !cheating() && !is_character_alt("Shadow Mario") && in_area("Booty Scooting Safari") && prev(timer_active()) && booty_end() && get_flag([4, 0x1f8]) == 0, always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
+leaderboard("Booty Scooting Safari (Revisited) Speedrun (IGT)", "Reach the end of the slide as fast as possible in Lacrima 3 (Revisited)", !cheating() && !is_character_alt("Shadow Mario") && in_area("Booty Scooting Safari") && prev(timer_active()) && booty_end() && get_flag([4, 0x1f8]) == 1, always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Daisy Cruiser Timer Speedrun (IGT)", "Collect the timed Shine Sprite as fast as possible in Daisy Cruiser", !cheating() && in_area("Daisy Cruiser") && prev(timer_active()) && collect_shine("Cruiser Timer"), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Daisy Cruiser Timer Speedrun (IGT)", "Collect the timed Shine Sprite as fast as possible in Daisy Cruiser", !cheating() && !is_character_alt("Shadow Mario") && in_area("Daisy Cruiser") && prev(timer_active()) && collect_shine("Cruiser Timer"), always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Mario's Dream 1 Speedrun (IGT)", "Pop 20 balloons as fast as possible in Mario's Dream 1", !cheating() && in_area_episode("Mario's Dream", 1) && prev(timer_active()) && reach_count(balloons_popped(), 20), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Mario's Dream 1 Speedrun (IGT)", "Pop 20 balloons as fast as possible in Mario's Dream 1", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Mario's Dream", 1) && prev(timer_active()) && reach_count(balloons_popped(), 20), always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Memphis Mania Timer Speedrun (IGT)", "Collect the timed Shine Sprite as fast as possible in Memphis Mania", !cheating() && in_area("Memphis Mania") && prev(timer_active()) && collect_shine("Vaporwave 3"), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Memphis Mania Timer Speedrun (IGT)", "Collect the timed Shine Sprite as fast as possible in Memphis Mania", !cheating() && !is_character_alt("Shadow Mario") && in_area("Memphis Mania") && prev(timer_active()) && collect_shine("Vaporwave 3"), always_false(), always_true(), timer(), format="MILLISECS")
 
-leaderboard("Red Lily City 1 Speedrun (IGT)", "Reach the flag as fast as possible during the race against La Nokissia in Red Lily 1", !cheating() && in_area_episode("Red Lily City", 1) && prev(timer_active()) && reach_race_flag(), always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
+leaderboard("Red Lily City 1 Speedrun (IGT)", "Reach the flag as fast as possible during the race against La Nokissia in Red Lily 1", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Red Lily City", 1) && prev(timer_active()) && reach_race_flag(), always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
 
-leaderboard("Peach Beach 1 Speedrun (IGT)", "Smash all crates as fast as possible in Peach Beach 1", !cheating() && in_area_episode("Peach Beach", 1) && prev(timer_active()) && crate_complete(), always_false(), always_true(), timer(), format="MILLISECS")
-leaderboard("Peach Beach 2 Speedrun (IGT)", "Reach the finish line as fast as possible in Peach Beach 2", !cheating() && in_area_episode("Peach Beach", 2) && prev(timer_active()) && timer() <= 4000 && track_complete(), always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
-leaderboard("Peach Beach Timer Speedrun (IGT)", "Collect the timed Shine Sprite as fast as possible in Peach Beach", !cheating() && in_area("Peach Beach") && prev(timer_active()) && collect_shine("Peach 3"), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Peach Beach 1 Speedrun (IGT)", "Smash all crates as fast as possible in Peach Beach 1", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Peach Beach", 1) && prev(timer_active()) && crate_complete(), always_false(), always_true(), timer(), format="MILLISECS")
+leaderboard("Peach Beach 2 Speedrun (IGT)", "Reach the finish line as fast as possible in Peach Beach 2", !cheating() && !is_character_alt("Shadow Mario") && in_area_episode("Peach Beach", 2) && prev(timer_active()) && timer() <= 4000 && track_complete(), always_false(), always_true(), timer(), format="MILLISECS", lower_is_better=true)
+leaderboard("Peach Beach Timer Speedrun (IGT)", "Collect the timed Shine Sprite as fast as possible in Peach Beach", !cheating() && !is_character_alt("Shadow Mario") && in_area("Peach Beach") && prev(timer_active()) && collect_shine("Peach 3"), always_false(), always_true(), timer(), format="MILLISECS")
